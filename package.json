@@ -1,0 +1,28 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "- `npm install` — установка стабильной версии, - `npm run dev` — запуск версии для разработчика, - `npm run build:prod` — сборка стабильной версии.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.pug --open --port 3000",
+    "build": "parcel build src/index.pug --out-dir=build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abrikosovp/middle.messenger.praktikum.yandex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abrikosovp/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/Abrikosovp/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.5",
+    "pug": "^3.0.2",
+    "sass": "^1.42.1"
+  }
+}
