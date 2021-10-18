@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.custom-textfield {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    height: 46px;
+    border-radius: 26px;
+    //border: 1px solid black;
+    background: $color-input;
+    box-sizing: border-box;
+
+    &:focus-visible {
+      outline: 2px solid $color-lightly-gray;
+    }
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  input::placeholder {
+    color: #808080;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding-left: 10px;
+  }
+}

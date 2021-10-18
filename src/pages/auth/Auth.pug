@@ -1,0 +1,26 @@
+extends ../../layout/main
+include  ../../components/input/textfield.pug
+include  ../../components/button/button.pug
+
+block variables
+    - const title = 'Вход'
+
+append head-content
+    link(href="auth.scss" rel="stylesheet")
+
+block main-content
+    .auth-page
+        form(action='#' method='method').container-form.elevation.b-radius
+            .form__header.text-title.mb-10 #{title}
+            .container-form__field.mb-4
+                +textfield("Логин", "Логин", "login", 'text')
+            .container-form__field.mb-4
+                +textfield("Пароль", "Пароль", "password", 'text')
+            +button('Войти').container-form__btn
+            .container-form__footer
+                a(href="#").container-form__footer-link Нет аккаунта?
+
+
+
+prepend script
+    script(src="auth.js")

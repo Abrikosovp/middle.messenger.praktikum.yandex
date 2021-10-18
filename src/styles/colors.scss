@@ -1,0 +1,19 @@
+$colors: (
+        "info": #369ba7,
+        "icon": #666666,
+        "active": #666666,
+);
+
+:root {
+  --color-info: #369ba7;
+  --color-icon: #666666;
+  --color-btnActive: #666666;
+};
+
+.color {
+  @each $name, $hash in $colors {
+    &-#{$name} {
+      color: $hash;
+    }
+  }
+}

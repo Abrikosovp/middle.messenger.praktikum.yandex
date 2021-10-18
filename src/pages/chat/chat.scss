@@ -1,0 +1,154 @@
+@import '../../styles/main.scss';
+
+.chat-page {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-side {
+  width: 400px;
+  flex-shrink: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #131c21;
+  border-right: 1px solid #3c4247;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: $color-header-footer;
+    //border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__search {
+    padding: 10px;
+    border-bottom: 1px solid #3c4247;
+  }
+
+  &__users {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    //padding: 5px 10px;
+
+    &__list {
+      width: 95%;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //padding: 7px;
+        height: 60px;
+        width: 100%;
+
+        &:hover {
+          background-color: #33383b;
+        }
+
+        .user-img {
+          width: 10%;
+        }
+
+        .user-data {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          border-bottom: 1px solid #3c4247;
+
+          &__name {
+            display: flex;
+            flex-direction: column;
+            //width: 80%;
+          }
+
+          &__date {
+            width: 10%;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: $color-header-footer;
+  }
+
+  &__user-image {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__user-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: $color-white;
+  }
+  &__user-text {
+    font-size: 13px;
+    //font-weight: 600;
+    color: $color-lightly-gray;
+  }
+
+  &__body {
+    flex-grow: 1;
+    background-color: $color-chat-background;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $color-header-footer;
+  }
+
+  &__messages-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 10px 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    margin-right: 10px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      color: white;
+      background-color: $color-link;
+    }
+
+  }
+}
