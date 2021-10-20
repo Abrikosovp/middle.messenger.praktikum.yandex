@@ -2,6 +2,10 @@
 
 https://www.figma.com/file/YYEdDyBhdyXBsbkY9AANz5/yandex-messanger?node-id=0%3A1
 
+## Ссылка Pull request
+
+https://github.com/Abrikosovp/middle.messenger.praktikum.yandex/pull/1
+
 
 ## Команды
 
