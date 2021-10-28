@@ -1,0 +1,32 @@
+extends ../../layout/main
+include  ../../components/input/textfield.pug
+include  ../../components/button/button.pug
+
+block variables
+    - const title = 'Регистрация'
+
+append head-content
+    link(href="registration.scss" rel="stylesheet")
+
+block main-content
+    .registration-page
+        form(action='#' method='method').container-form.elevation.b-radius
+            .form__header.text-title.mb-10 #{title}
+            .container-form__field.mb-4
+                +textfield("Имя", "Имя", "first_name", 'text')
+            .container-form__field.mb-4
+                +textfield("Фамилия", "Фамилия", "second_name", 'text')
+            .container-form__field.mb-4
+                +textfield("Почта", "Почта", "email", 'email')
+            .container-form__field.mb-4
+                +textfield("Логин", "Логин", "login", 'text')
+            .container-form__field.mb-4
+                +textfield("Пароль", "Пароль", "password", 'password')
+            .container-form__field.mb-4
+                +textfield("Телефон", "Телефон", "phone", 'text')
+            +button('Создать профиль').container-form__btn
+
+
+
+prepend script
+    script(src="registration.js")

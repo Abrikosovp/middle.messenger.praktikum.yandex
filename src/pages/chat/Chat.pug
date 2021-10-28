@@ -1,0 +1,39 @@
+extends ../../layout/main
+include  ../../components/input/textfield.pug
+include  ../../components/button/button.pug
+include  ../../mixins/chat-page.pug
+
+block variables
+    - const title = 'Вход'
+
+append head-content
+    link(href="chat.scss" rel="stylesheet")
+
+block main-content
+    .chat-page
+        .chat-side
+            .chat-side__header
+                img.chat-content__user-image(src='../../static/dddd.png', alt)
+            .chat-side__search
+                +textfield("", "Поиск или новый чат", "messages", "text")
+            .chat-side__users
+                ul.chat-side__users__list
+                    each item in [{name: "Иван", avatar: "../../static/dddd.png", date: "11:25", lastMessage: "Привет как дела ?"}, {name: "Иван", avatar: "../../static/test.jpeg", date: "11:25", lastMessage: "Привет как дела ? что делаешь ? Привет как дела ? что делаешь ? Привет как дела ? что делаешь ?"}]
+                       +userItem(item)
+
+        .chat-content
+            .chat-content__header
+                img.chat-content__user-image(src='../../static/dddd.png', alt)
+                span.chat-content__user-name Петров
+            .chat-content__body
+                ul.chat-content__messages
+                    each item in [1, 2, 3]
+                        li #{item}
+            .chat-content__action
+                form.chat-content__messages-form
+                    .chat-content__input
+                        +textfield("", "Сообщения", "messages", "text")
+                    button.chat-content__btn отпр
+
+
+prepend script
