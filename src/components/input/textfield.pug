@@ -1,4 +1,4 @@
 mixin textfield(label, placeholder, name, type)
     .custom-textfield
-        label.text-inscription #{label}
-        input(type= type, placeholder=placeholder, name=name).custom-textfield__input
+        label(for=label).text-inscription #{label}
+        input(type= type, placeholder=placeholder, name=name id=label).custom-textfield__input

@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b98b107d-0d5f-46c6-acf8-3fd13efb60b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/Auth.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/Auth.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat/chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/error/NotFound.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +94,9 @@
       <workItem from="1634550366980" duration="2563000" />
       <workItem from="1634574962352" duration="238000" />
       <workItem from="1634575205700" duration="307000" />
-      <workItem from="1635434583016" duration="894000" />
+      <workItem from="1635434583016" duration="2385000" />
+      <workItem from="1635438929675" duration="1182000" />
+      <workItem from="1635440132363" duration="377000" />
     </task>
     <servers />
   </component>

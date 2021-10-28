@@ -9,7 +9,6 @@
     width: 100%;
     height: 46px;
     border-radius: 26px;
-    //border: 1px solid black;
     background: $color-input;
     box-sizing: border-box;
 
@@ -23,7 +22,7 @@
   }
 
   input::placeholder {
-    color: #808080;
+    color: $color-light-gray;
   }
 
   input[type="text"], input[type="email"], input[type="password"] {

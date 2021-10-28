@@ -1,4 +1,2 @@
 (function () {
-
-    console.log("dasdasdasd")
 })();
