@@ -6,18 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b98b107d-0d5f-46c6-acf8-3fd13efb60b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/head.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/head.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/auth/Auth.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/Auth.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chat.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/error/NotFound.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/auth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/error/error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/error/error.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/Registration.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/Registration.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
         <option value="SCSS File" />
         <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -57,10 +56,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -96,7 +98,17 @@
       <workItem from="1634575205700" duration="307000" />
       <workItem from="1635434583016" duration="2385000" />
       <workItem from="1635438929675" duration="1182000" />
-      <workItem from="1635440132363" duration="377000" />
+      <workItem from="1635440132363" duration="1374000" />
+      <workItem from="1635441555024" duration="7000" />
+      <workItem from="1640017425306" duration="1204000" />
+      <workItem from="1641402588174" duration="925000" />
+      <workItem from="1641406289663" duration="2650000" />
+      <workItem from="1642026252454" duration="5825000" />
+      <workItem from="1642675828130" duration="2000" />
+      <workItem from="1643471060298" duration="809000" />
+      <workItem from="1643659355443" duration="614000" />
+      <workItem from="1643824424959" duration="5243000" />
+      <workItem from="1644183560259" duration="9197000" />
     </task>
     <servers />
   </component>
