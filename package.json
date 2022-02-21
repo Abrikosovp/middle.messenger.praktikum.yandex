@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug --open --port 3000",
-    "build": "parcel build src/index.pug --no-cache"
+    "build": "parcel build src/index.pug --no-cache npm i"
   },
   "repository": {
     "type": "git",
