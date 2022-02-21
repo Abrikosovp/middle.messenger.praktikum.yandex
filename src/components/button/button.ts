@@ -9,7 +9,11 @@ export class Button extends Block {
 
     constructor(props: BtnType) {
         // Создаём враппер дом-элемент button
-        super("div", {...props}, ["container-btn", "chat-content__btn"]);
+        const cl: string[] = ["container-btn"];
+        if (props.tagClass) {
+            cl.push("chat-content__btn")
+        }
+        super("div", {...props}, cl);
     }
 
     isDisabled(btnDisabled: string) {

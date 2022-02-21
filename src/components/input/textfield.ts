@@ -51,8 +51,6 @@ export class Textfield extends Block {
     }
 
     public onFocusValid = (value: string = "", name: string = "") => {
-        console.log(name)
-        console.log(value)
         // @ts-ignore
         const {isValid, errorText} = validation[name](value);
         this.updateForm(value, isValid, errorText);

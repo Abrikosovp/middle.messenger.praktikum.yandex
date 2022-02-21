@@ -27,7 +27,7 @@ export class ChatContent extends Block {
                         id: InputName.message,
                         inputName: InputName.message,
                     }),
-                    btn: new Button({text: "отпр",})
+                    btn: new Button({text: "отпр", tagClass: "chat-content__btn"})
                 }
             })
 

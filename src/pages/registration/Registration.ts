@@ -5,6 +5,8 @@ import Textfield from "../../components/input";
 import {Button} from "../../components/button/button";
 import Form from "../../components/form";
 import {InputLabel, InputName, InputPlaceholder, UrlPage} from "../../const/const";
+import renderPage from "../../utils/renderPage";
+
 
 export class Registration extends Block {
 
@@ -69,3 +71,6 @@ export class Registration extends Block {
         });
     }
 }
+
+
+renderPage('.app',  new Registration());

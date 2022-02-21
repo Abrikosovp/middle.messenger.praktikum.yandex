@@ -41,9 +41,6 @@ export class ChatForm extends Block {
         Object.keys(content).forEach(key => {
             if(key !== 'btn' && key !== 'avatar') {
                 const component = content[key];
-                console.log("===========================")
-                console.log(component.props.inputValue)
-                console.log(component.props.id)
                 component.onFocusValid(component.props.inputValue, component.props.id)
                 result.push(!!content[key].props.inputValue)
             }

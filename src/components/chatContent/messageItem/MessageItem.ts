@@ -9,7 +9,6 @@ export class MessageItem extends Block {
     }
 
     protected render(): TRenderElement {
-        console.log(this.props.text);
         return this.compile(template, {
             ...this.props,
         });
