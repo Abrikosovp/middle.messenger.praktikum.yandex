@@ -8,13 +8,15 @@ Messenger - мгновенного обмена сообщениями, позв
 - `Pug`
 - `Scss`
 - `JS`
+- `TypeScript`
 - `Parcel`
 - `Node.js`
 - `Express`
+- `Eslint`
 
 - «[Дизайн проекта](https://www.figma.com/file/YYEdDyBhdyXBsbkY9AANz5/yandex-messanger?node-id=0%3A1)»
-- «[Pull request](https://github.com/Abrikosovp/middle.messenger.praktikum.yandex/pull/1)»
-- «[Netlify](https://elastic-elion-4924b2.netlify.app/)» 
+- «[Pull request](https://github.com/Abrikosovp/middle.messenger.praktikum.yandex/pull/2)»
+- «[Netlify](https://elastic-elion-4924b2.netlify.app )» 
    [![Netlify Status](https://api.netlify.com/api/v1/badges/4f6b788e-bda4-4c8a-856e-aa288864ab0a/deploy-status)](https://app.netlify.com/sites/elastic-elion-4924b2/deploys)
 
 

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "- `npm install` — установка стабильной версии, - `npm run dev` — запуск версии для разработчика, - `npm run build:prod` — сборка стабильной версии.",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug --open --port 3000",
