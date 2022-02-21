@@ -1,9 +1,10 @@
-@import "../../styles/variables";
+@import "src/styles/variables";
 
 .custom-textfield {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 4px;
 
   &__input {
     width: 100%;

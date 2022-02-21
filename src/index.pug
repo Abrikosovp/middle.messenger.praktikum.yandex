@@ -1,25 +1,14 @@
 extends layout/main
 
 block variables
-    - const title = 'Вход'
+    - const title = 'Messanger'
 
 append head-content
     link(href="./index.scss" rel="stylesheet")
     link(href="./styles/normalize.scss" rel="stylesheet")
 
 block main-content
-    .main-content
-        .welcome-page
-            ul.nav
-                li.nav-item
-                    a(href="pages/auth/Auth.pug").nav-link Логин
-                li.nav-item
-                    a(href="pages/registration/Registration.pug").nav-link Регистрация
-                li.nav-item
-                    a(href="pages/profile/Profile.pug").nav-link Профиль
-                li.nav-item
-                    a(href="pages/chat/Chat.pug").nav-link Чат
-                li.nav-item
-                    a(href="pages/error/Error404.pug").nav-link Ошибка 404
-                li.nav-item
-                    a(href="pages/error/Error505.pug").nav-link Ошибка 505
+    .app
+
+prepend script
+    script(src="index.ts" type="module")
