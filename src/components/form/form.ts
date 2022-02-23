@@ -1,6 +1,7 @@
 import Block from "../../utils/Block";
-import { TComponent, TObjectString, TRenderElement} from "../../types/types";
+import {TComponent, TRenderElement} from "../../types/types";
 import {template} from "./template";
+import {Button} from "../button/button";
 
 
 type FormProps = {
@@ -8,44 +9,72 @@ type FormProps = {
     urlPage?: string,
     urlMessage?: string,
     content?: TComponent
+    btn?: Block
+    avatar?: Block
+    typeForm?: string
 };
+
+type TBtn = {
+    type: string,
+    text: string,
+    tagClass?: string,
+}
+
+function serializeForm(formNode: HTMLFormElement): any {
+    const inputs = Array.from(formNode.getElementsByTagName('input'));
+    const obj: any = {};
+    inputs.forEach((i) => {
+        obj[i.name] = i.value;
+        return null;
+    });
+    return obj;
+}
 
 export class Form extends Block {
 
     constructor(props?: FormProps) {
-        super("form", {
+        const isChat = props?.typeForm === "chat";
+        const tagClass = isChat ? ["chat-content__messages-form"] : ["container-form", "elevation", "b-radius"];
+
+        let propsBtn: TBtn = {
+            type: "submit",
+            text: 'Создать',
+        }
+
+        if (isChat) {
+            propsBtn.text = "созд";
+            propsBtn.tagClass = "chat-content__btn";
+        }
+
+        super("form", tagClass,{
             ...props,
+            btn: new Button(propsBtn),
             events: {
                 submit: (event: Event) => this.onSubmit(event),
             }
-        }, ["container-form", "elevation", "b-radius"]);
+        });
     }
 
     private onSubmit(event: Event): void {
         event.preventDefault();
-        const valid = this.isValidForm();
-
+        const target = (event.target as HTMLFormElement)
+        const data = serializeForm(target);
+        const valid = this.isValidForm(data);
         if (valid) {
-            let result: TObjectString = {};
-            const content = this.props.content;
-            Object.keys(content).forEach(key => {
-                if(key !== 'btn') result[key] = content[key].props.inputValue
-            })
-
-            console.log(result);
+            console.log(data);
         }
     }
 
-    private isValidForm(): boolean {
+    private isValidForm(data: any): boolean {
         let result: boolean[] = [];
         const content = this.props.content;
-        Object.keys(content).forEach(key => {
-            if(key !== 'btn' && key !== 'avatar') {
+        Object.keys(data).forEach(key => {
+            if(key !== 'file') {
                 const component = content[key];
-                component.onFocusValid(component.props.inputValue, component.props.id)
-                result.push(!!content[key].props.inputValue)
-            }
+                component.onFocusValid(data[key], key)
 
+                result.push(!!content[key].props.errorMessage.props.isValid)
+            }
         });
 
         return result.every(val => val);
@@ -55,7 +84,7 @@ export class Form extends Block {
     protected render(): TRenderElement {
         return this.compile(template, {
             ...this.props,
-            ...this.props.content
+            ...this.props.content,
         });
     }
 }

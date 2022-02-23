@@ -14,11 +14,11 @@ import Error from "../../pages/error";
 import Chat from "../../pages/chat";
 
 const pages: Record<string, Block<any>> = {
-    [UrlPage.main]: new Main(),
-    [UrlPage.login]: new Auth(),
-    [UrlPage.registration]: new Registration(),
-    [UrlPage.profile]: new Profile(),
-    [UrlPage.chats]: new Chat({}),
+    [UrlPage.Main]: new Main(),
+    [UrlPage.Login]: new Auth(),
+    [UrlPage.Registration]: new Registration(),
+    [UrlPage.Profile]: new Profile(),
+    [UrlPage.Chats]: new Chat(),
 };
 
 const showPage: TFShowPage = (pathname) => {

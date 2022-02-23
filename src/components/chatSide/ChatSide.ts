@@ -3,19 +3,18 @@ import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import {UrlImg} from "../../const/const";
 
-type SideType = {}
 
 export class ChatSide extends Block {
 
-    constructor(props?: SideType) {
-        super("div", props, ["chat-side"]);
+    constructor() {
+        super("div", ["chat-side"]);
     }
 
     protected render(): TRenderElement {
         return this.compile(template, {
             ...this.props,
-            imgIncoming: UrlImg.incoming,
-            imgOutgoing: UrlImg.outgoing,
+            imgIncoming: UrlImg.Incoming,
+            imgOutgoing: UrlImg.Outgoing,
         });
     }
 

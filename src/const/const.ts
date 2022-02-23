@@ -1,16 +1,16 @@
 // import Block from "../utils/Block";
 
 export enum UrlPage {
-    main = '/',
-    login = "/login",
-    registration = "/registration",
-    profile = "/profile",
-    chats = "/chats",
+    Main = '/',
+    Login = "/login",
+    Registration = "/registration",
+    Profile = "/profile",
+    Chats = "/chats",
 }
 
 export enum UrlImg {
-    incoming = "https://i.imgur.com/HYcn9xO.png",
-    outgoing = "https://i.imgur.com/LJ1TiaG.jpeg"
+    Incoming = "https://i.imgur.com/HYcn9xO.png",
+    Outgoing = "https://i.imgur.com/LJ1TiaG.jpeg"
 }
 
 
@@ -21,7 +21,6 @@ export enum InputName {
     secondName = "second_name",
     email = "email",
     phone = "phone",
-    file = "file",
     message = "message",
 }
 

@@ -3,14 +3,11 @@ import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import ChatSide from "../../components/chatSide";
 import ChatContent from "../../components/chatContent";
-import renderPage from "../../utils/renderPage";
-
-type ChatType = {}
 
 export class Chat extends Block {
 
-    constructor(props?: ChatType) {
-        super("div", props, ["chat-page"]);
+    constructor() {
+        super("div",["chat-page"]);
     }
 
 
@@ -22,5 +19,3 @@ export class Chat extends Block {
         });
     }
 }
-
-renderPage('.app',  new Chat());

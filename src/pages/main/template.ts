@@ -1,7 +1,4 @@
 export const template = `
-append head-content
-    link(href="./chat.scss" rel="stylesheet")
-    
 .welcome-page
             ul.nav
                 li.nav-item

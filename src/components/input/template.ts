@@ -6,4 +6,5 @@ if labelName
 label(for=label).text-inscription #{labelName}
 
 input(type=type || 'text', hidden= hidden, name=inputName, id=inputName, placeholder=placeholder, class=className, autocomplete=autocomplete, value=inputValue,)
-.error-message #{errorText}`
+#{errorMessage}
+`

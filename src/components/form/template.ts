@@ -1,15 +1,24 @@
 export const template = `
-.header-page-form.text-title.mb-10 #{title}
-.container-form__field.mb-4
-  #{avatar}
-  #{avatar}
-  #{firstName}
-  #{secondName}
-  #{login}
-  #{email}
-  #{phone}
-  #{password}
-#{btn}
-.container-form__footer
-    a(href=urlPage).container-form__footer-link #{urlMessage}
+if typeForm === "chat"
+  .chat-content__input
+    #{message}
+  #{btn}
+else
+  .header-page-form.text-title.mb-10 #{title}
+  .container-form__field.mb-4
+    if typeForm === "registration" || typeForm === "profile"
+        if typeForm === "profile"
+            #{avatar}
+        #{first_name}
+        #{second_name}
+        #{login}
+        #{password}
+        #{email}
+        #{phone}
+    if typeForm === "auth"
+        #{login}
+        #{password}    
+  #{btn}
+  .container-form__footer
+      a(href="/"+urlPage).container-form__footer-link #{urlMessage}
 `;

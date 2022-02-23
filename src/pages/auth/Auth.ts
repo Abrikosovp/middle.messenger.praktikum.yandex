@@ -2,17 +2,13 @@ import Block from "../../utils/Block";
 import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
-import {Button} from "../../components/button/button";
 import Form from "../../components/form";
 import {InputLabel, InputName, InputPlaceholder, UrlPage} from "../../const/const";
-import renderPage from "../../utils/renderPage";
-
-type AuthType = {}
 
 export class Auth extends Block {
 
-    constructor(props?: AuthType) {
-        super("div", props, ["form-page"]);
+    constructor() {
+        super("div", ["form-page"]);
     }
 
     protected render(): TRenderElement {
@@ -21,30 +17,25 @@ export class Auth extends Block {
 
             formTemplate: new Form({
                 title: 'Авторизация',
-                urlPage: UrlPage.registration,
+                urlPage: UrlPage.Registration,
                 urlMessage: "Не зарегистрированы ?",
+                typeForm: "auth",
                 content: {
-                    login: new Textfield({
+                    [InputName.login]: new Textfield({
                         labelName: InputLabel.login,
                         id: InputName.login,
                         inputName: InputName.login,
                         placeholder: InputPlaceholder.login,
                     }),
-                    password: new Textfield({
+                    [InputName.password]: new Textfield({
                         labelName: InputLabel.password,
                         id: InputName.password,
                         inputName: InputName.password,
                         type: InputName.password,
                         placeholder: InputPlaceholder.password,
                     }),
-                    btn: new Button({
-                        text: 'Отправить',
-                        type: "submit",
-                    }),
-                }
+                },
             }),
         });
     }
 }
-
-renderPage('.app',  new Auth());

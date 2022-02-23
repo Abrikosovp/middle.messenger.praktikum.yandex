@@ -6,6 +6,7 @@
 
 @import "src/components/button/button";
 @import 'src/components/input/textfield.scss';
+@import 'src/components/input/errorMessage/errorMessage.scss';
 @import "src/pages/error/error";
 @import "src/pages/chat/chat";
 
@@ -28,10 +29,6 @@ html, body {
   margin: 0 auto;
   padding: 30px;
   box-shadow: $bs;
-}
-
-.error-message {
-  color: red;
 }
 
 .nav {

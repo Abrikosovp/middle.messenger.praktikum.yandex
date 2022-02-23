@@ -15,12 +15,6 @@ type Events =
     | typeof Block.EVENTS.FLOW_CDU
     | typeof Block.EVENTS.FLOW_RENDER
 
-export type componentCircleValue =
-    'init'
-    | 'flow:component-did-mount'
-    | 'flow:render'
-    | 'flow:component-did-update';
-
 export default class Block<P = any> {
     static EVENTS = {
         INIT: "init",
@@ -38,11 +32,12 @@ export default class Block<P = any> {
 
     /** JSDoc
      * @param {string} tagName
-     * @param {Object} props
+     * @param tagClass
+     * @param {Object} props styles for this tag.
      *
      * @returns {void}
      */
-    constructor(tagName: string = "div", props?: P, tagClass?: string[]) {
+    constructor(tagName: string = "div", tagClass?: string[], props?: P) {
         const eventBus = new EventBus<Events>();
         this._meta = {
             tagName,
@@ -69,8 +64,10 @@ export default class Block<P = any> {
         const {tagName, tagClass = []} = this._meta;
         this._element = this._createDocumentElement(tagName);
         if (tagClass.length > 0) {
-            // @ts-ignore
-            tagClass.forEach(cl => {this._element.classList.add(cl);})
+            tagClass.forEach(cl => {
+                // @ts-ignore
+                this._element.classList.add(cl);
+            })
 
         }
     }
@@ -136,7 +133,7 @@ export default class Block<P = any> {
         });
 
         //рендарим шаблон
-        fragment.innerHTML = render(template, { doctype: 'html', ...props }); //передали сюда
+        fragment.innerHTML = render(template, {doctype: 'html', ...props}); //передали сюда
 
 
         Object.entries(components).forEach(([id, component]) => {
@@ -207,7 +204,14 @@ export default class Block<P = any> {
         }
 
         Object.entries(events).forEach(([event, listener]) => {
-            this._element!.addEventListener(event, listener)
+            if (event !== "submit") {
+                // @ts-ignore
+                const id = `#${this.props.id}`;
+                const currentEl = this._element!.querySelector(id);
+                currentEl?.addEventListener(event, listener);
+            } else {
+                this._element!.addEventListener(event, listener);
+            }
         })
     }
 

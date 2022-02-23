@@ -1,5 +1,4 @@
-
-import { template } from "./template";
+import {template} from "./template";
 import {ComponentEvents, TRenderElement} from "../../types/types";
 import Block from "../../utils/Block";
 
@@ -13,7 +12,7 @@ export class Button extends Block {
         if (props.tagClass) {
             cl.push("chat-content__btn")
         }
-        super("div", {...props}, cl);
+        super("div", cl, {...props});
     }
 
     isDisabled(btnDisabled: string) {

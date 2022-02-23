@@ -1,7 +1,8 @@
 import {ComponentEvents, TRenderElement} from "../../types/types";
-import validation from "../../utils/validation";
+import validations from "../../utils/validations";
 import Block from "../../utils/Block";
-import { template } from "./template";
+import {template} from "./template";
+import ErrorMessage from "./errorMessage";
 
 type InputProps = {
     id: string;
@@ -20,16 +21,17 @@ type InputProps = {
 export class Textfield extends Block {
 
     constructor(props: InputProps) {
-        super("div", {
-            ...props,
-            events: {
-                // focusin: () => this.onFocus(),
-                focusout:(e:FocusEvent) => this.handleChange(e),
-                change: (e:FocusEvent) => this.handleChange(e)
-            }
-        }, ['custom-textfield']);
-    }
 
+        super("div", ['custom-textfield'], {
+            ...props,
+            className: "custom-textfield__input",
+            errorMessage: new ErrorMessage({isValid: true, errorText: ""}),
+            events: {
+                blur: (e: FocusEvent) => this.handleChange(e),
+                focus: (e: FocusEvent) => this.handleChange(e)
+            }
+        });
+    }
 
     onFocus(): void {
         this.setProps({
@@ -40,32 +42,25 @@ export class Textfield extends Block {
         this.getContent().querySelector(`input`)?.focus();
     }
 
-    handleChange(e:FocusEvent): void {
+    handleChange(e: FocusEvent): void {
         e.preventDefault()
         const {name, value, files} = (e.target as HTMLInputElement);
         if (files) {
-            this.updateForm(files[0], false, "");
+            // this.updateForm(files[0], false, "");
         } else {
-            this.onFocusValid(value, name)
+            this.onFocusValid(value, name);
         }
     }
 
-    public onFocusValid = (value: string = "", name: string = "") => {
+    onFocusValid = (value: string = "", name: string = "") => {
         // @ts-ignore
-        const {isValid, errorText} = validation[name](value);
-        this.updateForm(value, isValid, errorText);
-    }
-
-    updateForm(value: FormDataEntryValue | null, isValid: boolean, errorText: string) {
-        this.setProps({
-            ...this.props,
-            isValid,
-            errorText,
-            inputValue: `${value}`,
-        });
+        const {isValid, errorText} = validations[name](value);
+        this.props.errorMessage.setProps({
+            isValid, errorText
+        })
     }
 
     render(): TRenderElement {
-        return this.compile(template, {...this.props, className: "custom-textfield__input"});
+        return this.compile(template, {...this.props});
     }
 }
