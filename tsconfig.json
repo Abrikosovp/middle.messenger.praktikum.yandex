@@ -1,14 +1,11 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
-    "outDir": "test",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node"
   }
 }
