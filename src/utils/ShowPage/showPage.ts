@@ -23,7 +23,9 @@ const pages: Record<string, Block<any>> = {
 
 const showPage: TFShowPage = (pathname) => {
     const block = pages[pathname];
-    renderPage('.app',  block ?? new Error({}));
+    console.log("block")
+    console.log(block)
+    renderPage('.app',  block ?? new Error());
 };
 
 
