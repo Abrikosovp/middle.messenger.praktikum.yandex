@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "- `npm install` — установка стабильной версии, - `npm run dev` — запуск версии для разработчика, - `npm run build:prod` — сборка стабильной версии.",
   "engines": {
-    "node": ">=12.18.3"
+    "node": ">=16.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
