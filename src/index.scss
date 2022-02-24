@@ -1,0 +1,67 @@
+@import 'styles/variables';
+@import 'styles/colors.scss';
+@import 'src/components/form/formPage';
+@import 'src/pages/main/main';
+@import 'src/components/button/button';
+@import 'src/components/input/textfield.scss';
+@import 'src/components/input/errorMessage/errorMessage.scss';
+@import 'src/pages/error/error';
+@import 'src/pages/chat/chat';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.start-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-page {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: $bs;
+}
+
+.nav {
+  display: block;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+
+  &-item {
+    margin: 0 2.5rem;
+  }
+
+  &-link {
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s ease color;
+    & :hover {
+      color: red;
+    }
+
+    &::after {
+      content: '';
+      opacity: 0;
+      display: block;
+      width: 100%;
+      height: .2rem;
+      margin-top: .5rem;
+      border-radius: 5rem;
+    }
+  }
+}

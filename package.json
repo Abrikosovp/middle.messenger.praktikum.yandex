@@ -2,15 +2,27 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "- `npm install` — установка стабильной версии, - `npm run dev` — запуск версии для разработчика, - `npm run build:prod` — сборка стабильной версии.",
-  "main": "index.js",
+  "engines": {
+    "node": ">=16.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.pug --open --port 3000",
-    "build": "parcel build src/index.pug --out-dir=build"
+    "start": "npm i && parcel src/index.pug --open --port 3000",
+    "serve": "parcel build --no-minify src/index.pug && node server.js",
+    "build": "rm -rf dist && parcel build src/index.pug --no-cache",
+    "eslint": "eslint . --ext .ts",
+    "stylelint": "stylelint \"src/**/*.scss\"",
+    "stylelintFixed": "stylelint \"src/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abrikosovp/middle.messenger.praktikum.yandex.git"
+  },
+  "targets": {
+    "global": {
+      "context": "browser",
+      "outputFormat": "global"
+    }
   },
   "keywords": [],
   "author": "",
@@ -20,9 +32,22 @@
   },
   "homepage": "https://github.com/Abrikosovp/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "express": "^4.17.1",
-    "parcel-bundler": "^1.12.5",
-    "pug": "^3.0.2",
-    "sass": "^1.42.1"
+    "@parcel/transformer-pug": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
+    "@types/pug": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "8.9.0",
+    "express": "4.17.3",
+    "parcel": "2.1.0",
+    "sass": "1.42.1",
+    "stylelint": "14.5.3",
+    "ts-node": "10.5.0",
+    "typescript": "4.5.5"
+  },
+  "dependencies": {
+    "nanoid": "3.3.1",
+    "pug": "3.0.2",
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }
