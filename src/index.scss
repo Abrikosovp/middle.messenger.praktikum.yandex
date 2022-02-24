@@ -1,17 +1,15 @@
 @import 'styles/variables';
-@import "styles/colors.scss";
-
-@import "src/components/form/formPage";
-@import "src/pages/main/main";
-
-@import "src/components/button/button";
+@import 'styles/colors.scss';
+@import 'src/components/form/formPage';
+@import 'src/pages/main/main';
+@import 'src/components/button/button';
 @import 'src/components/input/textfield.scss';
 @import 'src/components/input/errorMessage/errorMessage.scss';
-@import "src/pages/error/error";
-@import "src/pages/chat/chat";
+@import 'src/pages/error/error';
+@import 'src/pages/chat/chat';
 
-
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -52,7 +50,7 @@ html, body {
     text-decoration: none;
     font-weight: 700;
     transition: 0.2s ease color;
-    &:hover {
+    & :hover {
       color: red;
     }
 
