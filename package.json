@@ -18,6 +18,12 @@
     "type": "git",
     "url": "git+https://github.com/Abrikosovp/middle.messenger.praktikum.yandex.git"
   },
+  "targets": {
+    "global": {
+      "context": "browser",
+      "outputFormat": "global"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -39,7 +45,7 @@
     "typescript": "4.5.5"
   },
   "dependencies": {
-    "pug": "3.0.2",
-    "nanoid": "3.3.1"
+    "nanoid": "3.3.1",
+    "pug": "3.0.2"
   }
 }
