@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/Abrikosovp/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "@parcel/transformer-pug": "2.1.0",
+    "@parcel/transformer-pug": "^2.3.2",
     "@parcel/transformer-sass": "2.1.0",
     "@types/pug": "2.0.6",
     "@typescript-eslint/eslint-plugin": "5.11.0",
