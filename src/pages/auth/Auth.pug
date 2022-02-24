@@ -1,0 +1,14 @@
+extends ../../layout/main
+
+
+block variables
+    - const title = 'Логин'
+
+append head-content
+    link(href="../../index.scss" rel="stylesheet")
+
+block main-content
+    .app
+
+prepend script
+    script(src="Auth.ts" type="module")

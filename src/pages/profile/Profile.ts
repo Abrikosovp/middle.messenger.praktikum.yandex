@@ -5,6 +5,7 @@ import Textfield from "../../components/input";
 import Form from "../../components/form";
 import {InputLabel, InputName, InputPlaceholder, UrlImg, UrlPage} from "../../const/const";
 import Avatar from "../../components/avatar";
+import renderPage from "../../utils/renderPage";
 
 export class Profile extends Block {
 
@@ -69,3 +70,4 @@ export class Profile extends Block {
         });
     }
 }
+renderPage('.app',  new Profile());
