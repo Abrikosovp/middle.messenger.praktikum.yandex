@@ -2,14 +2,17 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "- `npm install` — установка стабильной версии, - `npm run dev` — запуск версии для разработчика, - `npm run build:prod` — сборка стабильной версии.",
-  "main": "index.js",
   "engines": {
-    "node": ">=12.16.3"
+    "node": ">=12.18.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug --open --port 3000",
-    "build": "parcel build src/index.pug --no-cache npm i"
+    "serve": "parcel build --no-minify src/index.pug && node server.js",
+    "build": "rm -rf dist && parcel build src/index.pug --no-cache",
+    "eslint": "eslint . --ext .ts",
+    "stylelint": "stylelint \"src/**/*.scss\"",
+    "stylelintFixed": "stylelint \"src/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -31,12 +34,12 @@
     "eslint": "8.9.0",
     "express": "4.17.3",
     "parcel": "2.1.0",
-    "pug": "3.0.2",
     "sass": "1.42.1",
     "ts-node": "10.5.0",
     "typescript": "4.5.5"
   },
   "dependencies": {
+    "pug": "3.0.2",
     "nanoid": "3.3.1"
   }
 }
