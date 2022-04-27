@@ -1,5 +1,5 @@
-import Block from "../utils/Block";
-import {InputName} from "../const/const";
+import Block from "../modules/block/Block";
+import {InputName} from "../utils/const/const";
 
 export type TRenderElement = HTMLElement | DocumentFragment;
 export type ComponentEvents = Partial<Record<keyof GlobalEventHandlersEventMap, (e: Event) => void>>;

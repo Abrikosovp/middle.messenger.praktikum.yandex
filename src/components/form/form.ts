@@ -1,4 +1,4 @@
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {TComponent, TRenderElement} from "../../types/types";
 import {template} from "./template";
 import {Button} from "../button/button";

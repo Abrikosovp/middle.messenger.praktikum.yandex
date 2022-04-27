@@ -1,5 +1,3 @@
-// import Block from "../utils/Block";
-
 export enum UrlPage {
     Main = '/',
     Login = "/login",

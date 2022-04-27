@@ -1,7 +1,7 @@
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../types/types";
 import {template} from "./template";
-import {UrlImg} from "../../const/const";
+import {UrlImg} from "../../utils/const/const";
 
 
 export class ChatSide extends Block {

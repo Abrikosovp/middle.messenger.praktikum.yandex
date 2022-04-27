@@ -1,6 +1,6 @@
 import {template} from "./template";
 import {ComponentEvents, TRenderElement} from "../../types/types";
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 
 type BtnType = { text: string, tagClass?: string, type?: string, events?: ComponentEvents }
 

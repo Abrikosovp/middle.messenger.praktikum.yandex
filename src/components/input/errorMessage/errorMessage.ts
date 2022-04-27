@@ -1,6 +1,6 @@
 
 import {template} from "./template";
-import Block from "../../../utils/Block";
+import Block from "../../../modules/block/Block";
 import {TRenderElement} from "../../../types/types";
 
 type TEMessageProps = {

@@ -1,4 +1,4 @@
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import ChatSide from "../../components/chatSide";

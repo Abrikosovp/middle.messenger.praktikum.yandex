@@ -1,9 +1,9 @@
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
 import Form from "../../components/form";
-import {InputLabel, InputName, InputPlaceholder, UrlImg, UrlPage} from "../../const/const";
+import {InputLabel, InputName, InputPlaceholder, UrlImg, UrlPage} from "../../utils/const/const";
 import Avatar from "../../components/avatar";
 import renderPage from "../../utils/renderPage";
 

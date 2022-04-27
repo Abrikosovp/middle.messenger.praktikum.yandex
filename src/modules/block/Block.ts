@@ -1,6 +1,6 @@
 import {render} from "pug";
-import {TRenderElement} from "../types/types";
-import {EventBus} from "./EventBus";
+import {TRenderElement} from "../../types/types";
+import {EventBus} from "../eventBus/EventBus";
 import {nanoid} from 'nanoid';
 
 interface BlockMeta<P = any> {
@@ -82,6 +82,8 @@ export default class Block<P = any> {
         this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
     }
 
+
+   // @ts-ignore
     componentDidMount(props: P) {
 
     }
@@ -94,6 +96,8 @@ export default class Block<P = any> {
         this._render();
     }
 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     componentDidUpdate(oldProps: P, newProps: P) {
         return true;
     }

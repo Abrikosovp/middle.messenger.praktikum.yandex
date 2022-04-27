@@ -1,6 +1,6 @@
 import {ComponentEvents, TRenderElement} from "../../types/types";
 import validations from "../../utils/validations";
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {template} from "./template";
 import ErrorMessage from "./errorMessage";
 

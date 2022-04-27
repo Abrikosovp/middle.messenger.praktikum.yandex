@@ -1,8 +1,8 @@
-import Block from "../../utils/Block";
+import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import Textfield from "../input";
-import {InputName, UrlImg} from "../../const/const";
+import {InputName, UrlImg} from "../../utils/const/const";
 import Form from "../form";
 
 export class ChatContent extends Block {

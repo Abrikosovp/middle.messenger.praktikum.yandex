@@ -1,4 +1,4 @@
-import {InputName} from "../const/const";
+import {InputName} from "./const/const";
 import {TFValidationLength, TValidate, TValidation} from "../types/types";
 
 
