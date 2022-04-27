@@ -1,10 +1,10 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
 import Form from "../../components/form";
-import {InputLabel, InputName, InputPlaceholder, UrlPage} from "../../utils/const/const";
-import renderPage from "../../utils/renderPage";
+import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
+import Link from "../../components/link";
 
 export class Auth extends Block {
 
@@ -18,7 +18,6 @@ export class Auth extends Block {
 
             formTemplate: new Form({
                 title: 'Авторизация',
-                urlPage: UrlPage.Registration,
                 urlMessage: "Не зарегистрированы ?",
                 typeForm: "auth",
                 content: {
@@ -35,9 +34,13 @@ export class Auth extends Block {
                         type: InputName.password,
                         placeholder: InputPlaceholder.password,
                     }),
+                    [InputName.link]: new Link({
+                        path: `${RouterLinks.REGISTRATION}`,
+                        label: RouterLinksName.NOT_REGISTRATION,
+                    }),
                 },
             }),
         });
     }
 }
-renderPage('.app',  new Auth());
+export default Auth;

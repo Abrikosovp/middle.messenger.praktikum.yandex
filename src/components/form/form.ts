@@ -1,12 +1,11 @@
 import Block from "../../modules/block/Block";
-import {TComponent, TRenderElement} from "../../types/types";
+import {TComponent, TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import {Button} from "../button/button";
 
 
 type FormProps = {
     title?: string,
-    urlPage?: string,
     urlMessage?: string,
     content?: TComponent
     btn?: Block

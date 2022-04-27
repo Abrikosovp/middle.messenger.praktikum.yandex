@@ -1,10 +1,10 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
 import Form from "../../components/form";
-import {InputLabel, InputName, InputPlaceholder, UrlPage} from "../../utils/const/const";
-import renderPage from "../../utils/renderPage";
+import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
+import Link from "../../components/link";
 
 
 export class Registration extends Block {
@@ -19,7 +19,6 @@ export class Registration extends Block {
 
             formTemplate: new Form({
                 title: 'Регистрация',
-                urlPage: UrlPage.Login,
                 urlMessage: "Уже зарегистрированы ?",
                 typeForm: "registration",
                 content: {
@@ -62,9 +61,13 @@ export class Registration extends Block {
                         inputName: InputName.phone,
                         placeholder: InputPlaceholder.phone,
                     }),
+                    [InputName.link]: new Link({
+                        path: RouterLinks.LOGIN,
+                        label: RouterLinksName.ALREADY_REGISTRATION,
+                    }),
                 }
             }),
         });
     }
 }
-renderPage('.app',  new Registration());
+export default Registration;

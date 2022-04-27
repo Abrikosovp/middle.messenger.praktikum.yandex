@@ -1,5 +1,5 @@
 import {render} from "pug";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {EventBus} from "../eventBus/EventBus";
 import {nanoid} from 'nanoid';
 

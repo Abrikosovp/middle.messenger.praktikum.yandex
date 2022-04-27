@@ -1,11 +1,11 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
 import Form from "../../components/form";
-import {InputLabel, InputName, InputPlaceholder, UrlImg, UrlPage} from "../../utils/const/const";
+import {InputLabel, InputName, InputPlaceholder, UrlImg, RouterLinks, RouterLinksName} from "../../utils/const/const";
 import Avatar from "../../components/avatar";
-import renderPage from "../../utils/renderPage";
+import Link from "../../components/link";
 
 export class Profile extends Block {
 
@@ -19,7 +19,6 @@ export class Profile extends Block {
 
             formTemplate: new Form({
                 title: 'Профиль',
-                urlPage: UrlPage.Login,
                 urlMessage: "Уже зарегистрированы ?",
                 typeForm: "profile",
                 content: {
@@ -65,9 +64,13 @@ export class Profile extends Block {
                         inputName: InputName.phone,
                         placeholder: InputPlaceholder.phone,
                     }),
+                    [InputName.link]: new Link({
+                        path: RouterLinks.CHATS,
+                        label: RouterLinksName.BACK,
+                    }),
                 },
             }),
         });
     }
 }
-renderPage('.app',  new Profile());
+export default Profile;

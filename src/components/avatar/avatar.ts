@@ -1,5 +1,5 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../input";
 
@@ -26,8 +26,6 @@ export class Avatar extends Block {
     }
 
     protected render(): TRenderElement {
-        console.log("this.props")
-        console.log(this.props)
         return this.compile(template, {
             ...this.props,
             file: new Textfield({

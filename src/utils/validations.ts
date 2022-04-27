@@ -1,5 +1,5 @@
 import {InputName} from "./const/const";
-import {TFValidationLength, TValidate, TValidation} from "../types/types";
+import {TFValidationLength, TValidate, TValidation} from "./types/types";
 
 
 const lengthSting: TFValidationLength = (min, max, value) => {

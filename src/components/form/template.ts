@@ -20,5 +20,5 @@ else
         #{password}    
   #{btn}
   .container-form__footer
-      a(href="/"+urlPage).container-form__footer-link #{urlMessage}
+      #{link}
 `;

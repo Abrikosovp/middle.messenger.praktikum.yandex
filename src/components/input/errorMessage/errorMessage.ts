@@ -1,7 +1,7 @@
 
 import {template} from "./template";
 import Block from "../../../modules/block/Block";
-import {TRenderElement} from "../../../types/types";
+import {TRenderElement} from "../../../utils/types/types";
 
 type TEMessageProps = {
     errorText?: string;

@@ -1,9 +1,8 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
 import {template} from "./template";
 import ChatSide from "../../components/chatSide";
 import ChatContent from "../../components/chatContent";
-import renderPage from "../../utils/renderPage";
+import {TRenderElement} from "../../utils/types/types";
 
 export class Chat extends Block {
 
@@ -20,4 +19,4 @@ export class Chat extends Block {
         });
     }
 }
-renderPage('.app',  new Chat());
+export default Chat;

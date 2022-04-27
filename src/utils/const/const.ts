@@ -1,9 +1,9 @@
-export enum UrlPage {
+export enum RouterLinks {
     Main = '/',
-    Login = "/login",
-    Registration = "/registration",
-    Profile = "/profile",
-    Chats = "/chats",
+    LOGIN = "/login",
+    REGISTRATION = "/registration",
+    PROFILE = "/profile",
+    CHATS = "/chats",
 }
 
 export enum UrlImg {
@@ -20,6 +20,13 @@ export enum InputName {
     email = "email",
     phone = "phone",
     message = "message",
+    link = "link",
+}
+
+export enum RouterLinksName {
+    NOT_REGISTRATION = "Не зарегистрированы ?",
+    ALREADY_REGISTRATION = "Уже зарегистрированы ?",
+    BACK = "Назад",
 }
 
 

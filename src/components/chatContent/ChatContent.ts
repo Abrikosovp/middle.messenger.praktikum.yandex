@@ -1,5 +1,5 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../types/types";
+import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../input";
 import {InputName, UrlImg} from "../../utils/const/const";
