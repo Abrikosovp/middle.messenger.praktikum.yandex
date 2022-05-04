@@ -9,8 +9,11 @@ type FormProps = {
     urlMessage?: string,
     content?: TComponent
     btn?: Block
+    btnText?: string,
     avatar?: Block
+    isBtn?: boolean
     typeForm?: string
+    handlerSubmit?: (param: Record<string, string>) => void;
 };
 
 type TBtn = {
@@ -37,17 +40,18 @@ export class Form extends Block {
 
         let propsBtn: TBtn = {
             type: "submit",
-            text: 'Создать',
+            text: props?.btnText ? props.btnText : 'Создать',
         }
 
         if (isChat) {
-            propsBtn.text = "созд";
             propsBtn.tagClass = "chat-content__btn";
         }
 
+        const isBtn = props?.isBtn;
+
         super("form", tagClass,{
             ...props,
-            btn: new Button(propsBtn),
+            btn: isBtn ? null : new Button(propsBtn),
             events: {
                 submit: (event: Event) => this.onSubmit(event),
             }
@@ -60,7 +64,7 @@ export class Form extends Block {
         const data = serializeForm(target);
         const valid = this.isValidForm(data);
         if (valid) {
-            console.log(data);
+            this.props.handlerSubmit(data)
         }
     }
 

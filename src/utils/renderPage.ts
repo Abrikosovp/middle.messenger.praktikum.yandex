@@ -5,6 +5,12 @@ export default function renderPage(query: string, block: Block) {
     if (!root) {
         throw new Error("Root not found")
     }
+
+
+    root!.innerHTML = '';
     root.appendChild(block.getContent());
+    // console.log(block)
+    // block.dispatchComponentDidMount();
+
     return root;
 }

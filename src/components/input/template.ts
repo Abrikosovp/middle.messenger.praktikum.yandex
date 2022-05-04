@@ -5,6 +5,6 @@ append head-content
 if labelName
 label(for=label).text-inscription #{labelName}
 
-input(type=type || 'text', hidden= hidden, name=inputName, id=inputName, placeholder=placeholder, class=className, autocomplete=autocomplete, value=inputValue,)
+input(type=type || 'text', hidden= hidden, name=inputName, id=inputName, placeholder=placeholder, class=className, autocomplete=autocomplete, value=inputValue, disabled=disabled)
 #{errorMessage}
 `

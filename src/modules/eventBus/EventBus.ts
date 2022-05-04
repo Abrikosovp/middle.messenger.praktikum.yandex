@@ -32,6 +32,3 @@ export class EventBus<E extends string = string, M extends { [K in E]: unknown[]
         });
     }
 }
-
-// const bus = new EventBus<'click' | 'input', {click: [MouseEvent]; input: [InputEvent]}>()
-// bus.emit('click', () => {})

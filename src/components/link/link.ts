@@ -1,31 +1,28 @@
 import {template} from "./template";
-import {TRenderElement} from "../../utils/types/types";
+import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import Block from "../../modules/Block/Block";
-import Router from "../../modules/Router/Router";
+import Router from "../../modules/Router";
 
-type BtnType = { path: string, label?: string}
+type BtnType = { path: string, id?: string, label?: string, className?: string, events?: ComponentEvents }
 
 export class Link extends Block {
 
     constructor(props: BtnType) {
 
         super("div", [], {
-            ...props,
             events: {
                 click: (event: MouseEvent) => this.onClick(event),
             },
+            ...props,
         });
     }
 
     onClick(event: MouseEvent): void {
         event.preventDefault();
-        console.log(this.props.path)
-        // @ts-ignore
         Router.go(this.props.path);
     }
 
-
     render(): TRenderElement {
-        return this.compile(template, {...this.props, className: "container-form__footer-link"});
+        return this.compile(template, {className: "container-form__footer-link", ...this.props});
     }
 }

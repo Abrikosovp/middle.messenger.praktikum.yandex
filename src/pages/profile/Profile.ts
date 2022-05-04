@@ -1,16 +1,16 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../utils/types/types";
+import {TRenderElement, TUserResponse} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
 import Form from "../../components/form";
-import {InputLabel, InputName, InputPlaceholder, UrlImg, RouterLinks, RouterLinksName} from "../../utils/const/const";
+import {InputLabel, InputName, InputPlaceholder, UrlImg} from "../../utils/const/const";
 import Avatar from "../../components/avatar";
-import Link from "../../components/link";
+import Navigation from "./navigation";
 
 export class Profile extends Block {
 
-    constructor() {
-        super("div", ["form-page"]);
+    constructor(props: TUserResponse) {
+        super("div", ["form-page"], props);
     }
 
     protected render(): TRenderElement {
@@ -21,53 +21,62 @@ export class Profile extends Block {
                 title: 'Профиль',
                 urlMessage: "Уже зарегистрированы ?",
                 typeForm: "profile",
+                btnText: "Сохранить",
+                isBtn: true,
                 content: {
                     avatar: new Avatar({
                         url: UrlImg.Incoming,
                     }),
-                    [InputName.firstName]: new Textfield({
-                        labelName: InputLabel.firstName,
-                        id: InputName.firstName,
-                        inputName: InputName.firstName,
-                        placeholder: InputPlaceholder.firstName,
+                    [InputName.displayName]: new Textfield({
+                        labelName: InputLabel.displayName,
+                        id: InputName.displayName,
+                        inputName: InputName.displayName,
+                        inputValue: this.props.display_name,
+                        placeholder: InputPlaceholder.displayName,
+                        disabled: true
                     }),
-                    [InputName.secondName]: new Textfield({
-                        labelName: InputLabel.secondName,
-                        id: InputName.secondName,
-                        inputName: InputName.secondName,
-                        placeholder: InputPlaceholder.secondName,
-                    }),
-                    [InputName.login]: new Textfield({
-                        labelName: InputLabel.login,
-                        id: InputName.login,
-                        inputName: InputName.login,
-                        placeholder: InputPlaceholder.login,
-                    }),
-
                     [InputName.email]: new Textfield({
                         labelName: InputLabel.email,
                         id: InputName.email,
                         inputName: InputName.email,
                         type: InputName.email,
+                        inputValue: this.props.email,
                         placeholder: InputPlaceholder.email,
+                        disabled: true
                     }),
-                    [InputName.password]: new Textfield({
-                        labelName: InputLabel.password,
-                        id: InputName.password,
-                        inputName: InputName.password,
-                        type: InputName.password,
-                        placeholder: InputPlaceholder.password,
+                    [InputName.login]: new Textfield({
+                        labelName: InputLabel.login,
+                        id: InputName.login,
+                        inputName: InputName.login,
+                        inputValue: this.props.login,
+                        placeholder: InputPlaceholder.login,
+                        disabled: true
+                    }),
+                    [InputName.firstName]: new Textfield({
+                        labelName: InputLabel.firstName,
+                        id: InputName.firstName,
+                        inputName: InputName.firstName,
+                        inputValue: this.props.first_name,
+                        placeholder: InputPlaceholder.firstName,
+                        disabled: true
+                    }),
+                    [InputName.secondName]: new Textfield({
+                        labelName: InputLabel.secondName,
+                        id: InputName.secondName,
+                        inputName: InputName.secondName,
+                        inputValue: this.props.second_name,
+                        placeholder: InputPlaceholder.secondName,
+                        disabled: true
                     }),
                     [InputName.phone]: new Textfield({
                         labelName: InputLabel.phone,
                         id: InputName.phone,
                         inputName: InputName.phone,
+                        inputValue: this.props.phone,
                         placeholder: InputPlaceholder.phone,
+                        disabled: true
                     }),
-                    [InputName.link]: new Link({
-                        path: RouterLinks.CHATS,
-                        label: RouterLinksName.BACK,
-                    }),
+                    navigation: new Navigation({...this.props})
                 },
             }),
         });

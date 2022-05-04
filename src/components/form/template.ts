@@ -9,16 +9,29 @@ else
     if typeForm === "registration" || typeForm === "profile"
         if typeForm === "profile"
             #{avatar}
+        #{display_name}
         #{first_name}
         #{second_name}
         #{login}
-        #{password}
         #{email}
         #{phone}
     if typeForm === "auth"
         #{login}
-        #{password}    
+        #{password}       
+    if typeForm === "changePassword"
+        #{password}
+        #{oldPassword}
+        #{newPassword}     
+    if typeForm === "changeProfile"
+        #{display_name}
+        #{email}
+        #{login}
+        #{first_name}  
+        #{second_name}  
+        #{phone}  
+    
   #{btn}
   .container-form__footer
+      #{navigation}
       #{link}
 `;

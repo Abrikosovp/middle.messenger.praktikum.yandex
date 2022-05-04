@@ -44,6 +44,18 @@ const emptyValidate = (value: string): TValidation => {
     }
     return {isValid: true, errorText: ''}
 }
+const emptyLink = (): TValidation => {
+    return {isValid: true, errorText: ''}
+}
+const displaiNameValid = (value: string): TValidation => {
+
+    const lvalid = lengthSting(3, 20, value);
+    if (!lvalid.isValid) {
+        return lvalid;
+    }
+
+    return {isValid: true, errorText: ''}
+}
 
 const loginValid = (value: string): TValidation => {
     let empty = emptyValidate(value);
@@ -216,9 +228,13 @@ const validations: TValidate = {
     [InputName.firstName]: nameValid,
     [InputName.secondName]: nameValid,
     [InputName.password]: passValid,
+    [InputName.oldPassword]: passValid,
+    [InputName.newPassword]: passValid,
     [InputName.email]: emailValid,
     [InputName.phone]: phoneValid,
     [InputName.message]: emptyValidate,
+    [InputName.link]: emptyLink,
+    [InputName.displayName]: displaiNameValid,
 }
 
 export default validations

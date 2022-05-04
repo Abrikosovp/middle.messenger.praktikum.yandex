@@ -1,7 +1,9 @@
 import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
-import {UrlImg} from "../../utils/const/const";
+import {RouterLinks, UrlImg} from "../../utils/const/const";
+import Link from "../link";
+import ChatList from "./ChatList";
 
 
 export class ChatSide extends Block {
@@ -15,6 +17,8 @@ export class ChatSide extends Block {
             ...this.props,
             imgIncoming: UrlImg.Incoming,
             imgOutgoing: UrlImg.Outgoing,
+            chatList: new ChatList({}),
+            profileLink: new Link({label: "профиль", path: RouterLinks.PROFILE, id: "patchProfile", className: "link-color"})
         });
     }
 

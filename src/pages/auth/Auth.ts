@@ -5,6 +5,9 @@ import Textfield from "../../components/input";
 import Form from "../../components/form";
 import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
 import Link from "../../components/link";
+import {connect} from "../../test/connect/connect";
+import AuthService from "../../test/services/authService"
+import {LoginRequestData} from "../../test/api/types";
 
 export class Auth extends Block {
 
@@ -13,13 +16,18 @@ export class Auth extends Block {
     }
 
     protected render(): TRenderElement {
+        const F = connect(Form, ({errorTextForm}) => ({errorTextForm}))
         return this.compile(template, {
             ...this.props,
 
-            formTemplate: new Form({
+            formTemplate: new F({
                 title: 'Авторизация',
                 urlMessage: "Не зарегистрированы ?",
                 typeForm: "auth",
+                handlerSubmit: (values: any) => {
+                    console.log("values" , values)
+                    AuthService.login(values as LoginRequestData);
+                },
                 content: {
                     [InputName.login]: new Textfield({
                         labelName: InputLabel.login,

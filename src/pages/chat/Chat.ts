@@ -3,11 +3,13 @@ import {template} from "./template";
 import ChatSide from "../../components/chatSide";
 import ChatContent from "../../components/chatContent";
 import {TRenderElement} from "../../utils/types/types";
+import ChatService from "../../test/services/chatService";
 
 export class Chat extends Block {
 
     constructor() {
         super("div",["chat-page"]);
+        ChatService.getChats()
     }
 
 

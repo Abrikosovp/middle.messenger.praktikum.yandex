@@ -10,6 +10,7 @@ export type Options = {
   method: METHODS;
   timeout?: number;
   data?: any;
+  withCredentials?: any;
 };
 
 export type OptionsWithoutMethod = Omit<Options, 'method'>;

@@ -19,6 +19,7 @@ export class ChatContent extends Block {
             imgOutgoing: UrlImg.Outgoing,
             formTemplate: new Form({
                 typeForm: "chat",
+                btnText: "созд",
                 content: {
                     [InputName.message]: new Textfield({
                         id: InputName.message,

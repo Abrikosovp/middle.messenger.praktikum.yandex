@@ -1,5 +1,7 @@
 import Route from "./Route";
 import {TBlockConnect} from "../../utils/types/types";
+import {RouterLinks} from "../../utils/const/const";
+import {TRouteProps} from "./types";
 
 class Router {
   history: History;
@@ -23,8 +25,8 @@ class Router {
     Router.__instance = this;
   }
 
-  use(pathname: string, block: TBlockConnect) {
-    const route = new Route(pathname, block, {rootQuery: this._rootQuery});
+  use(pathname: string, block: TBlockConnect, accessRight: TRouteProps['accessRight']) {
+    const route = new Route(pathname, block, {rootQuery: this._rootQuery, accessRight});
     this.routes.push(route);
     return this;
   }
@@ -38,20 +40,27 @@ class Router {
 
   _onRoute(pathname: string): void {
     const route = this.getRoute(pathname);
-    if (!route) return;
 
+    if (!route || (!this.isAuth && route.accessRight === 'private')) {
+      const route404 = this.routes.find((route) => route.match(RouterLinks.ERROR_404));
+      route404?.render();
+      return;
+    }
+
+    if (this.isAuth && route.accessRight === 'public') {
+      this.go(RouterLinks.CHATS);
+      return;
+    }
     if (this._currentRoute) {
       this._currentRoute.leave();
     }
-
-    this._currentRoute = route;
-
     route.render();
   }
 
   go(pathname: string): void {
     this.history.pushState({}, '', pathname);
     this._onRoute(pathname);
+
   }
 
   back() {
@@ -70,7 +79,6 @@ class Router {
     this.isAuth = value;
     return this;
   }
-
 
 }
 

@@ -10,7 +10,7 @@ import Link from "../../components/link";
 export class Registration extends Block {
 
     constructor() {
-        super("div",  ["form-page"]);
+        super("div", ["form-page"]);
     }
 
     protected render(): TRenderElement {
@@ -40,19 +40,18 @@ export class Registration extends Block {
                         inputName: InputName.login,
                         placeholder: InputPlaceholder.login,
                     }),
-
                     [InputName.email]: new Textfield({
                         labelName: InputLabel.email,
                         id: InputName.email,
                         inputName: InputName.email,
-                        type: "email",
+                        type: InputName.email,
                         placeholder: InputPlaceholder.email,
                     }),
                     [InputName.password]: new Textfield({
                         labelName: InputLabel.password,
                         id: InputName.password,
                         inputName: InputName.password,
-                        type: "password",
+                        type: InputName.password,
                         placeholder: InputPlaceholder.password,
                     }),
                     [InputName.phone]: new Textfield({
@@ -70,4 +69,5 @@ export class Registration extends Block {
         });
     }
 }
+
 export default Registration;
