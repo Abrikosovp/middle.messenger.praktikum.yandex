@@ -12,7 +12,7 @@ export class Button extends Block {
         if (props.tagClass) {
             cl.push("chat-content__btn")
         }
-        super("div", cl, {...props});
+        super("div", cl, {...props, className: "custom-bn"});
     }
 
     isDisabled(btnDisabled: string) {
@@ -23,6 +23,6 @@ export class Button extends Block {
     }
 
     render(): TRenderElement {
-        return this.compile(template, {...this.props, className: "custom-bn"});
+        return this.compile(template, {...this.props});
     }
 }

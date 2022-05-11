@@ -1,39 +1,36 @@
 import Block from "../../modules/block/Block";
-import {TRenderElement} from "../../utils/types/types";
+import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
-import Textfield from "../input";
+import UserService from "../../test/services/UserService";
 
 type AvatarType = {
-    url: string
+    url: string,
 }
 
-export class Avatar extends Block {
+export type AvatarProps = {
+    avatarLink?:string;
+    id?:string;
+    events?: ComponentEvents;
+}
+
+export class Avatar extends Block<AvatarProps> {
 
     constructor(props: AvatarType) {
         super("div", ["container-form__avatar", "mb-2"], {
-            id: "avatar",
             ...props,
+            id: "file",
             events: {
-                click: () => {
-                    const root: HTMLElement = document.querySelector("#file") as HTMLElement;
-                    root.click()
-                    if (!root) {
-                        throw new Error("Root not found")
-                    }
+                change: (event: any) => {
+                    event.preventDefault();
+                    const formData = new FormData();
+                    formData.append('avatar', event.target.files[0]);
+                    UserService.updateUserAvatar(formData);
                 },
             }
         });
     }
 
     protected render(): TRenderElement {
-        return this.compile(template, {
-            ...this.props,
-            file: new Textfield({
-                id: "file",
-                type: "file",
-                hidden: true,
-                inputName: "file",
-            }),
-        });
+        return this.compile(template, {...this.props,});
     }
 }

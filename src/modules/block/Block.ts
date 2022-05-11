@@ -74,12 +74,15 @@ export default class Block<P = any> {
 
     init() {
         this._createResources();
-        this.eventBus().emit(Block.EVENTS.FLOW_CDM, this.props);
+        this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
     }
 
     _componentDidMount(props: P) {
         this.componentDidMount(props);
-        this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
+    }
+
+    dispatchComponentDidMount(): void {
+        this.eventBus().emit(Block.EVENTS.FLOW_CDM);
     }
 
 

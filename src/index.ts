@@ -9,6 +9,8 @@ import AuthService from "./test/services/authService"
 import {getUser} from "./test/store/actions";
 import ChangePassword from "./pages/profile/changePassword";
 import ChangeProfile from "./pages/profile/changeProfile";
+import {CreateChat} from "./pages/createChat/CreateChat";
+import {AddUser} from "./pages/addUser/AddUser";
 
 
 AuthService.getUser().then(() => {
@@ -22,6 +24,8 @@ AuthService.getUser().then(() => {
         .use(RouterLinks.CHANGE_PASSWORD, ChangePassword, 'private')
         .use(RouterLinks.CHANGE_PROFILE, ChangeProfile, 'private')
         .use(RouterLinks.CHATS, Chat, 'private')
+        .use(RouterLinks.CREATE_USER, CreateChat, 'private')
+        .use(RouterLinks.ADD_USER, AddUser, 'private')
         .use(RouterLinks.ERROR_404, Error, 'error')
         .start();
 })

@@ -9,8 +9,8 @@ export default function renderPage(query: string, block: Block) {
 
     root!.innerHTML = '';
     root.appendChild(block.getContent());
-    // console.log(block)
-    // block.dispatchComponentDidMount();
+
+    block.dispatchComponentDidMount();
 
     return root;
 }

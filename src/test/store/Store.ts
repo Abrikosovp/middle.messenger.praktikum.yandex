@@ -1,17 +1,25 @@
 import {EventBus} from "../../modules/eventBus/EventBus";
 import set from "../../utils/set";
-import {TUserResponse} from "../../utils/types/types";
+import {MessageResponse, TUserResponse} from "../../utils/types/types";
 import {TChatResponse} from "../api/types";
+import {ChatUser} from "../../pages/chat/type";
 
 export enum StoreEvents {
     Updated = 'updated',
 }
 
+type TActiveChat = {
+    chatId: number | null;
+    users: ChatUser[];
+    token: string;
+    messageList: MessageResponse[] | null;
+};
+
 export type TStore = {
-    activeChat: any,
     errorTextForm: string;
     user: null | TUserResponse;
     chats: TChatResponse[];
+    activeChat: TActiveChat | null;
     modal: {
         isShow: boolean;
         type: 'createChat' | 'addUser' | null;

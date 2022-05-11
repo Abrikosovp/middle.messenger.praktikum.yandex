@@ -9,8 +9,6 @@ export class Navigation extends Block {
 
     constructor(props: any) {
         super("div", [], props);
-        console.log(props)
-
     }
 
     protected render(): TRenderElement {

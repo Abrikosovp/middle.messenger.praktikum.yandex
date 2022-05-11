@@ -4,6 +4,7 @@ import {RouterLinks} from "../../utils/const/const";
 import {ChangePasswordRequest, ChangeUserRequest} from "../api/types";
 import ChangeUserApi from "../api/ChangeUserApi";
 import ChangePasswordApi from "../api/ChangePasswordApi";
+import ChangeUserAvatarApi from "../api/ChangeUserAvatarApi";
 
 class UserService {
 
@@ -18,7 +19,15 @@ class UserService {
             await ChangePasswordApi.request(payload);
             Router.go(RouterLinks.PROFILE);
         } catch (e) {
-            
+
+        }
+    }
+
+    public async updateUserAvatar(payload: FormData): Promise<void> {
+        try {
+            const response = await ChangeUserAvatarApi.request(payload);
+            setUser(response);
+        } catch (e) {
         }
     }
 

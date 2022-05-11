@@ -3,6 +3,8 @@ export enum RouterLinks {
     LOGIN = "/",
     REGISTRATION = "/registration",
     PROFILE = "/profile",
+    CREATE_USER = "/create-user",
+    ADD_USER = "/add-user",
     CHANGE_PASSWORD = "/profile/change-password",
     CHANGE_PROFILE = "/profile/change-profile",
     CHATS = "/chats",
@@ -27,6 +29,8 @@ export enum InputName {
     phone = "phone",
     message = "message",
     link = "link",
+    title = "title",
+    userId = "user_id",
 }
 
 export enum RouterLinksName {
@@ -62,6 +66,9 @@ export enum InputPlaceholder {
     email = "Введите пожалуйста почта",
     displayName = "Введите пожалуйста имя в чате",
     phone = "Введите пожалуйста телефон",
+    file = "Введите пожалуйста телефон",
+    chatName = "Введите пожалуйста название чата",
+    userId = "Введите пожалуйста ID пользователя",
 }
 
 export type ROUTE_ACCESS = 'public'|'private'|'error';

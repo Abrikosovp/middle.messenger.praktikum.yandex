@@ -1,24 +1,38 @@
 import Block from "../../modules/block/Block";
 import {template} from "./template";
-import ChatSide from "../../components/chatSide";
-import ChatContent from "../../components/chatContent";
+import ChatSide from "../../components/sideChat";
+import SideMessages from "../../components/sideMessages";
 import {TRenderElement} from "../../utils/types/types";
 import ChatService from "../../test/services/chatService";
 
 export class Chat extends Block {
 
-    constructor() {
-        super("div",["chat-page"]);
+    constructor(props: any) {
+        super("div",["chat-page"], {
+            ...props,
+            chatSide: new ChatSide(),
+            chatContent: new SideMessages(),
+        });
         ChatService.getChats()
     }
 
+    async openChat(): Promise<void> {
+        const urlParam = new URL(window.location.href).searchParams.get('chatId');
+        if (urlParam) {
+            const chatId = parseFloat(urlParam);
+            ChatService.closeSocket(chatId);
+            await ChatService.getChat(chatId);
+        }
+    }
+
+    async componentDidMount(): Promise<void> {
+        await ChatService.getChats();
+        await this.openChat();
+    }
 
     protected render(): TRenderElement {
-        return this.compile(template, {
-            ...this.props,
-            chatSide: new ChatSide(),
-            chatContent: new ChatContent(),
-        });
+        return this.compile(template, this.props);
     }
 }
+
 export default Chat;

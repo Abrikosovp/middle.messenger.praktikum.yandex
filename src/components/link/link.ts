@@ -9,7 +9,8 @@ export class Link extends Block {
 
     constructor(props: BtnType) {
 
-        super("div", [], {
+        super("div", ["pl-5"], {
+            className: ["container-form__footer-link"],
             events: {
                 click: (event: MouseEvent) => this.onClick(event),
             },
@@ -23,6 +24,6 @@ export class Link extends Block {
     }
 
     render(): TRenderElement {
-        return this.compile(template, {className: "container-form__footer-link", ...this.props});
+        return this.compile(template, this.props);
     }
 }

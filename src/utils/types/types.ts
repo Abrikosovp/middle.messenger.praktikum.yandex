@@ -4,9 +4,6 @@ import {InputName} from "../const/const";
 export type TRenderElement = HTMLElement | DocumentFragment;
 export type ComponentEvents = Partial<Record<keyof GlobalEventHandlersEventMap, (e: Event) => void>>;
 export type TComponent = { [key:string]: Block }
-export type TObjectString = { [key:string]: string }
-
-
 
 export type TValidation = {isValid: boolean, errorText: string | null }
 export type TFValidationLength = (min: number, max: number, value: string) => TValidation;
@@ -35,6 +32,28 @@ export type TUserResponse = {
     avatar: string | null;
 }
 
+
+export type MessageResponse = {
+    id: number;
+    chat_id: number
+    time: string
+    type: string
+    user_id: number
+    content: string
+    file?: {
+        id: number
+        user_id: number
+        path: string
+        filename: string
+        content_type: string
+        content_size: number
+        upload_date: string
+    }
+};
+
+export type Token = {
+    token: string;
+}
 
 
 

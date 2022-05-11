@@ -36,7 +36,8 @@ export class Form extends Block {
 
     constructor(props?: FormProps) {
         const isChat = props?.typeForm === "chat";
-        const tagClass = isChat ? ["chat-content__messages-form"] : ["container-form", "elevation", "b-radius"];
+        const tagClass = isChat ? ["chat-content__action__messages-form"] : ["container-form", "elevation", "b-radius"];
+
 
         let propsBtn: TBtn = {
             type: "submit",

@@ -18,7 +18,7 @@ export class Profile extends Block {
             ...this.props,
 
             formTemplate: new Form({
-                title: 'Профиль',
+                title: '',
                 urlMessage: "Уже зарегистрированы ?",
                 typeForm: "profile",
                 btnText: "Сохранить",

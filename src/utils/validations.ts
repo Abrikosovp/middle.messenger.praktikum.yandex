@@ -235,6 +235,8 @@ const validations: TValidate = {
     [InputName.message]: emptyValidate,
     [InputName.link]: emptyLink,
     [InputName.displayName]: displaiNameValid,
+    [InputName.title]: emptyLink,
+    [InputName.userId]: emptyLink,
 }
 
 export default validations

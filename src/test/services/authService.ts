@@ -20,7 +20,7 @@ class AuthService {
 
     public async login(payload: LoginRequestData): Promise<void> {
         try {
-            await LoginApi.request(payload).then(data => console.log(data));
+            await LoginApi.request(payload);
             await this.getUser();
         } catch (e) {
         }

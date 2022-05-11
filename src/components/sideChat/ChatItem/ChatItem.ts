@@ -1,23 +1,27 @@
 import Block from "../../../modules/block/Block";
 import {TRenderElement} from "../../../utils/types/types";
 import {template} from "./template";
-import {ChatsListProps} from "./types";
 
+type ChatsItemProps = {
+    chatId: number,
+    title: string,
+    time: string,
+    name: string,
+    last_message: string,
+    unread_count: string,
+    avatar: string,
 
-export class ChatList extends Block {
-    constructor(props: ChatsListProps) {
+}
+
+export class ChatItem extends Block {
+    constructor(props: ChatsItemProps) {
         super("div", ["chat-list"], props);
     }
 
     protected render(): TRenderElement {
-        console.log(this.compile(template, {
-            ...this.props,
-        }))
         return this.compile(template, {
             ...this.props,
         });
     }
 
 }
-
-export default ChatList;

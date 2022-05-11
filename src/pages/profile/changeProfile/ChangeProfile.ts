@@ -12,8 +12,6 @@ export class ChangeProfile extends Block {
 
     constructor(props: TUserResponse) {
         super("div", ["form-page"], props);
-        console.log(props)
-
     }
 
     protected render(): TRenderElement {
@@ -26,7 +24,6 @@ export class ChangeProfile extends Block {
                 typeForm: "changeProfile",
                 btnText: "Сохранить",
                 handlerSubmit: (values: ChangeUserRequest) => {
-                    console.log(values)
                     UserService.updateUser(values);
                 },
                 content: {

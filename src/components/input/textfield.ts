@@ -54,7 +54,6 @@ export class Textfield extends Block {
     }
 
     onFocusValid = (value: string = "", name: string = "") => {
-        console.log(name)
         // @ts-ignore
         const {isValid, errorText} = validations[name](value);
         this.props.errorMessage.setProps({

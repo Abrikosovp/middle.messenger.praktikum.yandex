@@ -2,7 +2,24 @@ export const template = `
 if typeForm === "chat"
   .chat-content__input
     #{message}
-  #{btn}
+  if btn
+    #{btn}
+  .container-form__footer
+    #{link}
+else if typeForm === "createChat"
+  .create-user-input
+    #{title}
+  if btn
+    #{btn}
+  .container-form__footer
+    #{link}
+else if typeForm === "addUser"
+  .create-user-input
+    #{user_id}
+  if btn
+    #{btn}
+  .container-form__footer
+    #{link}
 else
   .header-page-form.text-title.mb-10 #{title}
   .container-form__field.mb-4
@@ -30,7 +47,8 @@ else
         #{second_name}  
         #{phone}  
     
-  #{btn}
+  if btn
+    #{btn}
   .container-form__footer
       #{navigation}
       #{link}

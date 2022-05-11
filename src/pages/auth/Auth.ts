@@ -25,7 +25,6 @@ export class Auth extends Block {
                 urlMessage: "Не зарегистрированы ?",
                 typeForm: "auth",
                 handlerSubmit: (values: any) => {
-                    console.log("values" , values)
                     AuthService.login(values as LoginRequestData);
                 },
                 content: {

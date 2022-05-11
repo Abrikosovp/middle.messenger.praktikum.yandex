@@ -40,8 +40,8 @@ export class HTTPTransport {
     post = <R>(url: string, options: OptionsWithoutMethod = {}): Promise<R> => {
         return this.request<R>(url, {...options, method: METHODS.POST}, options.timeout);
     };
-    delete = (url: string, options: OptionsWithoutMethod = {}): Promise<XMLHttpRequest> => {
-        return this.request(url, {...options, method: METHODS.DELETE}, options.timeout);
+    delete = <R>(url: string, options: OptionsWithoutMethod = {}): Promise<R> => {
+        return this.request<R>(url, {...options, method: METHODS.DELETE}, options.timeout);
     };
 
     request = <R>(url: string, options: Options, timeout = 5000): Promise<R> => {
