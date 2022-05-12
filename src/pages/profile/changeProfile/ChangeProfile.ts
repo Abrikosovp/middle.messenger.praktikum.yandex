@@ -5,8 +5,8 @@ import Textfield from "../../../components/input";
 import Form from "../../../components/form";
 import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../../utils/const/const";
 import Link from "../../../components/link";
-import {ChangeUserRequest} from "../../../test/api/types";
-import UserService from "../../../test/services/UserService";
+import {ChangeUserRequest} from "../../../modules/api/types";
+import UserService from "../../../modules/services/UserService";
 
 export class ChangeProfile extends Block {
 

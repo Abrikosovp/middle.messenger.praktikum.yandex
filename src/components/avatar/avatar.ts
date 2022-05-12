@@ -1,7 +1,7 @@
 import Block from "../../modules/block/Block";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
-import UserService from "../../test/services/UserService";
+import UserService from "../../modules/services/UserService";
 
 type AvatarType = {
     url: string,

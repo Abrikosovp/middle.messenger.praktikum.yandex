@@ -1,9 +1,9 @@
 import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../utils/types/types";
-import {connect} from "../../test/connect/connect";
+import {connect} from "../../modules/connect/connect";
 import Form from "../../components/form";
 import {template} from "../auth/template";
-import ChatService from "../../test/services/chatService";
+import ChatService from "../../modules/services/chatService";
 import {InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
 import Textfield from "../../components/input";
 import Link from "../../components/link";

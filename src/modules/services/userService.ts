@@ -1,5 +1,5 @@
 import {setUser} from "../store/actions";
-import Router from "../../modules/Router";
+import Router from "../Router";
 import {RouterLinks} from "../../utils/const/const";
 import {ChangePasswordRequest, ChangeUserRequest} from "../api/types";
 import ChangeUserApi from "../api/ChangeUserApi";

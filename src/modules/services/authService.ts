@@ -1,6 +1,6 @@
 import AuthApi from "../api/AuthApi"
 import {setUser} from "../store/actions";
-import Router from "../../modules/Router";
+import Router from "../Router";
 import LogoutApi from "../api/LogoutApi";
 import {RouterLinks} from "../../utils/const/const";
 import LoginApi from "../api/LoginApi";

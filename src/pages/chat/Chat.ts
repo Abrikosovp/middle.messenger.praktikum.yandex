@@ -3,7 +3,8 @@ import {template} from "./template";
 import ChatSide from "../../components/sideChat";
 import SideMessages from "../../components/sideMessages";
 import {TRenderElement} from "../../utils/types/types";
-import ChatService from "../../test/services/chatService";
+import ChatService from "../../modules/services/chatService";
+import {getUrlParam} from "../../utils/urlParam/getUrlParam";
 
 export class Chat extends Block {
 
@@ -17,7 +18,7 @@ export class Chat extends Block {
     }
 
     async openChat(): Promise<void> {
-        const urlParam = new URL(window.location.href).searchParams.get('chatId');
+        const urlParam = getUrlParam();
         if (urlParam) {
             const chatId = parseFloat(urlParam);
             ChatService.closeSocket(chatId);

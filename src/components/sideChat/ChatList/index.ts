@@ -1,4 +1,4 @@
-import {connect} from "../../../test/connect/connect";
+import {connect} from "../../../modules/connect/connect";
 import ChatList from "./ChatList";
 import ChatItem from "../ChatItem";
 import {getTime} from "../../../utils/getTime/gtrTime";
@@ -23,8 +23,7 @@ export default connect(ChatList, ({chats}) => ({
                     avatar = "";
                 }
 
-                return new ChatItem(
-                    {
+                return new ChatItem({
                         chatId: id,
                         title,
                         name: last_message?.user?.first_name ? last_message.user.first_name : "",

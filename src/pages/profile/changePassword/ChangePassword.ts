@@ -5,7 +5,7 @@ import Textfield from "../../../components/input";
 import Form from "../../../components/form";
 import {InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../../utils/const/const";
 import Link from "../../../components/link";
-import UserService from "../../../test/services/UserService";
+import UserService from "../../../modules/services/UserService";
 
 class ChangePassword extends Block {
 

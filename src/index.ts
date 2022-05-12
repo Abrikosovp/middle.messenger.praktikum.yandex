@@ -5,8 +5,8 @@ import Profile from "./pages/profile";
 import Error from "./pages/profile";
 import Router from "./modules/Router";
 import {RouterLinks} from "./utils/const/const";
-import AuthService from "./test/services/authService"
-import {getUser} from "./test/store/actions";
+import AuthService from "./modules/services/authService"
+import {getUser} from "./modules/store/actions";
 import ChangePassword from "./pages/profile/changePassword";
 import ChangeProfile from "./pages/profile/changeProfile";
 import {CreateChat} from "./pages/createChat/CreateChat";

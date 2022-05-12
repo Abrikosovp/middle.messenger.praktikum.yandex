@@ -3,7 +3,7 @@ import {TRenderElement} from "../../../utils/types/types";
 import {template} from "./template";
 import {InputName, RouterLinks, RouterLinksName} from "../../../utils/const/const";
 import Link from "../../../components/link";
-import AuthService from "../../../test/services/authService"
+import AuthService from "../../../modules/services/authService"
 
 export class Navigation extends Block {
 

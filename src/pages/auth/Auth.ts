@@ -5,9 +5,9 @@ import Textfield from "../../components/input";
 import Form from "../../components/form";
 import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
 import Link from "../../components/link";
-import {connect} from "../../test/connect/connect";
-import AuthService from "../../test/services/authService"
-import {LoginRequestData} from "../../test/api/types";
+import {connect} from "../../modules/connect/connect";
+import AuthService from "../../modules/services/authService"
+import {LoginRequestData} from "../../modules/api/types";
 
 export class Auth extends Block {
 

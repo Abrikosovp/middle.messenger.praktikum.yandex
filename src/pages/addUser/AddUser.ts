@@ -1,13 +1,13 @@
 import Block from "../../modules/block/Block";
 import {TRenderElement} from "../../utils/types/types";
-import {connect} from "../../test/connect/connect";
+import {connect} from "../../modules/connect/connect";
 import Form from "../../components/form";
 import {template} from "../auth/template";
 import {InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../utils/const/const";
 import Textfield from "../../components/input";
 import Link from "../../components/link";
-import {getActiveChat} from "../../test/store/actions";
-import ChatService from "../../test/services/chatService";
+import {getActiveChat} from "../../modules/store/actions";
+import ChatService from "../../modules/services/chatService";
 
 export class AddUser extends Block {
 

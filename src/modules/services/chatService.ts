@@ -12,7 +12,7 @@ import {ENDPOINTS} from "../api/consts";
 import {generateWSSParam} from "../../utils/generateWSSParam/generateWSSParam";
 import ChatDataApi from "../api/ChatDataApi";
 import {CreateChatRequest, UserToChatRequest} from "../../pages/chat/type";
-import Router from "../../modules/Router";
+import Router from "../Router";
 import {RouterLinks} from "../../utils/const/const";
 
 class ChatService {

@@ -5,7 +5,7 @@ import Form from "../../form";
 import Textfield from "../../input";
 import {InputName} from "../../../utils/const/const";
 
-import ChatService from "../../../test/services/chatService";
+import ChatService from "../../../modules/services/chatService";
 
 export class MessageFooterForm extends Block {
 

@@ -4,6 +4,7 @@ import {template} from "./template";
 import {ChatsListProps} from "./types";
 import Router from "../../../modules/Router";
 import {RouterLinks} from "../../../utils/const/const";
+import {getUrlParam} from "../../../utils/urlParam/getUrlParam";
 
 
 export class ChatList extends Block {
@@ -22,7 +23,9 @@ export class ChatList extends Block {
         event.stopPropagation()
         const element: EventTarget | null = event.srcElement;
         const id: any = (element as HTMLElement)?.id;
-        if (id) {
+
+
+        if (id !== getUrlParam()) {
             Router.go(`${RouterLinks.CHATS}?chatId=${id}`);
             Router.start();
         }

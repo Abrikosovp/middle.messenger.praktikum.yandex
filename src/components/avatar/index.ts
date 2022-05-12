@@ -1,4 +1,4 @@
-import {connect} from "../../test/connect/connect";
+import {connect} from "../../modules/connect/connect";
 import {Avatar} from "./avatar";
 
 export default connect(Avatar, ({user})=>{

@@ -1,4 +1,4 @@
-import {EventBus} from "../../modules/eventBus/EventBus";
+import {EventBus} from "../eventBus/EventBus";
 import set from "../../utils/set";
 import {MessageResponse, TUserResponse} from "../../utils/types/types";
 import {TChatResponse} from "../api/types";
