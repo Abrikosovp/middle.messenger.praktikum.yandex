@@ -7,7 +7,7 @@ import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} f
 import Link from "../../components/link";
 
 
-export class Registration extends Block {
+class Registration extends Block {
 
     constructor() {
         super("div", ["form-page"]);

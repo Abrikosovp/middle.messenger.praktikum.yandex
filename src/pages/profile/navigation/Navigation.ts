@@ -5,7 +5,7 @@ import {InputName, RouterLinks, RouterLinksName} from "../../../utils/const/cons
 import Link from "../../../components/link";
 import AuthService from "../../../modules/services/authService"
 
-export class Navigation extends Block {
+class Navigation extends Block {
 
     constructor(props: any) {
         super("div", [], props);

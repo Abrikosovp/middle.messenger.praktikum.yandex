@@ -7,7 +7,7 @@ import {RouterLinks} from "../../../utils/const/const";
 import {getUrlParam} from "../../../utils/urlParam/getUrlParam";
 
 
-export class ChatList extends Block {
+class ChatList extends Block {
 
     constructor(props: ChatsListProps) {
         super("div", ["chat-list"], {

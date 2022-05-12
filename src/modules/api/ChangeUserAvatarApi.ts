@@ -3,7 +3,7 @@ import {ENDPOINTS} from "./consts";
 import {TUserResponse} from "../../utils/types/types";
 
 
-export class ChangeUserAvatarApi extends BaseApi {
+class ChangeUserAvatarApi extends BaseApi {
     constructor() {
         super(ENDPOINTS.USER.PATH, true);
     }

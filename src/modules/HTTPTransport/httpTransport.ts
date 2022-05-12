@@ -2,7 +2,7 @@ import {Options, METHODS, OptionsWithoutMethod} from './types';
 import {ENDPOINTS} from "../api/consts";
 import queryStringify from "./queryStringify";
 
-export class HTTPTransport {
+class HTTPTransport {
 
     url: string;
     isFile: boolean;

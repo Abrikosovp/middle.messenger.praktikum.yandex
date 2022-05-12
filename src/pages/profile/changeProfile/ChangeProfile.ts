@@ -8,7 +8,7 @@ import Link from "../../../components/link";
 import {ChangeUserRequest} from "../../../modules/api/types";
 import UserService from "../../../modules/services/UserService";
 
-export class ChangeProfile extends Block {
+class ChangeProfile extends Block {
 
     constructor(props: TUserResponse) {
         super("div", ["form-page"], props);

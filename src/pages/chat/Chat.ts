@@ -6,7 +6,7 @@ import {TRenderElement} from "../../utils/types/types";
 import ChatService from "../../modules/services/chatService";
 import {getUrlParam} from "../../utils/urlParam/getUrlParam";
 
-export class Chat extends Block {
+class Chat extends Block {
 
     constructor(props: any) {
         super("div",["chat-page"], {

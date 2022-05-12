@@ -9,7 +9,7 @@ import {connect} from "../../modules/connect/connect";
 import AuthService from "../../modules/services/authService"
 import {LoginRequestData} from "../../modules/api/types";
 
-export class Auth extends Block {
+class Auth extends Block {
 
     constructor() {
         super("div", ["form-page"]);
