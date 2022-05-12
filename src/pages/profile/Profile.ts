@@ -7,7 +7,7 @@ import {InputLabel, InputName, InputPlaceholder, UrlImg} from "../../utils/const
 import Avatar from "../../components/avatar";
 import Navigation from "./navigation";
 
-export class Profile extends Block {
+class Profile extends Block {
 
     constructor(props: TUserResponse) {
         super("div", ["form-page"], props);
