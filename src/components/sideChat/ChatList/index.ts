@@ -15,8 +15,6 @@ export default connect(ChatList, ({chats}) => ({
                     unread_count,
                 }) => {
 
-
-                // console.log(chats)
                 let avatar = last_message?.user?.avatar;
 
                 if (avatar) {

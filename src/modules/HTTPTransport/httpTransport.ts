@@ -1,19 +1,20 @@
 import {Options, METHODS, OptionsWithoutMethod} from './types';
 import {ENDPOINTS} from "../../test/api/consts";
+import queryStringify from "./queryStringify";
 
-function queryStringify(data: Object) {
-    // Можно делать трансформацию GET-параметров в отдельной функции
-    let result = '';
-    Object.entries(data).forEach(([key, value], index) => {
-        if (index === 0) {
-            result = '?';
-        } else {
-            result = `${result}&`;
-        }
-        result = `${result}${key}=${value}`;
-    });
-    return result;
-}
+// export function queryStringify(data: Object) {
+//     // Можно делать трансформацию GET-параметров в отдельной функции
+//     let result = '';
+//     Object.entries(data).forEach(([key, value], index) => {
+//         if (index === 0) {
+//             result = '?';
+//         } else {
+//             result = `${result}&`;
+//         }
+//         result = `${result}${key}=${value}`;
+//     });
+//     return result;
+// }
 
 export class HTTPTransport {
 

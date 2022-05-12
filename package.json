@@ -6,13 +6,13 @@
     "node": ">=16.13.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm i && parcel src/index.pug --open --port 3000",
     "serve": "parcel build --no-minify src/index.pug && node server.js",
     "build": "rm -rf dist && parcel build src/index.pug --no-cache",
     "eslint": "eslint . --ext .ts",
     "stylelint": "stylelint \"src/**/*.scss\"",
-    "stylelintFixed": "stylelint \"src/**/*.scss\" --fix"
+    "stylelintFixed": "stylelint \"src/**/*.scss\" --fix",
+    "test": "./node_modules/.bin/mocha -r jsdom-global/register"
   },
   "repository": {
     "type": "git",
@@ -32,13 +32,25 @@
   },
   "homepage": "https://github.com/Abrikosovp/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "@babel/runtime": "^7.17.9",
     "@parcel/transformer-pug": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
+    "@types/chai": "^4.3.1",
+    "@types/jsdom": "^16.2.14",
+    "@types/mocha": "^9.1.1",
     "@types/pug": "^2.0.6",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
+    "chai": "^4.3.6",
     "eslint": "8.9.0",
     "express": "4.17.3",
+    "jsdom": "^19.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^10.0.0",
     "parcel": "2.1.0",
     "sass": "1.42.1",
     "stylelint": "14.5.3",
