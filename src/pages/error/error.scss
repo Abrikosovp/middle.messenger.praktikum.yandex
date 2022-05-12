@@ -1,0 +1,14 @@
+@import 'src/pages/main/main';
+
+.error-page {
+
+  width: 100%;
+  height: 100vh;
+  background-color: $color-tz;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Hack', monospace;
+  color: $color-sz;
+}
