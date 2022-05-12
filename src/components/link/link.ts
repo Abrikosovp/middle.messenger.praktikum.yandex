@@ -1,6 +1,6 @@
 import {template} from "./template";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
-import Block from "../../modules/Block/Block";
+import Block from "../../modules/Block";
 import Router from "../../modules/Router";
 
 type BtnType = { path: string, id?: string, label?: string, className?: string, events?: ComponentEvents }

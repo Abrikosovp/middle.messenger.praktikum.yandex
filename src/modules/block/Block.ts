@@ -15,7 +15,7 @@ type Events =
     | typeof Block.EVENTS.FLOW_CDU
     | typeof Block.EVENTS.FLOW_RENDER
 
-export default class Block<P = any> {
+export class Block<P = any> {
     static EVENTS = {
         INIT: "init",
         FLOW_CDM: "flow:component-did-mount",

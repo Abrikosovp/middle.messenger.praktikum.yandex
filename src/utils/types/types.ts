@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {InputName} from "../const/const";
 
 export type TRenderElement = HTMLElement | DocumentFragment;

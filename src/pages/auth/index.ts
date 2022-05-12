@@ -1,2 +1,1 @@
-import {Auth} from "./Auth";
-export default Auth;
+export {Auth as default} from "./Auth";

@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import UserService from "../../modules/services/UserService";

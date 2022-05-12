@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";

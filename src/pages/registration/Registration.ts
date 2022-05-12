@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {TRenderElement} from "../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../components/input";
@@ -7,7 +7,7 @@ import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} f
 import Link from "../../components/link";
 
 
-class Registration extends Block {
+export class Registration extends Block {
 
     constructor() {
         super("div", ["form-page"]);
@@ -69,5 +69,3 @@ class Registration extends Block {
         });
     }
 }
-
-export default Registration;

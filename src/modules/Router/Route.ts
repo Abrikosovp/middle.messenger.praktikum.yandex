@@ -1,4 +1,4 @@
-import Block from '../Block/Block';
+import Block from '../block';
 
 import {TRouteProps} from './types';
 import renderPage from "../../utils/renderPage";

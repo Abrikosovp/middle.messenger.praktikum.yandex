@@ -1,4 +1,4 @@
-import Block from "../../../modules/block/Block";
+import Block from "../../../modules/block";
 import {TRenderElement, TUserResponse} from "../../../utils/types/types";
 import {template} from "./template";
 import Textfield from "../../../components/input";
@@ -12,10 +12,6 @@ export class ChangePassword extends Block {
     constructor(props: TUserResponse) {
         super("div", ["form-page"], props);
     }
-
-    // oldPassword: string;
-    // newPassword: string;
-
 
     protected render(): TRenderElement {
         return this.compile(template, {

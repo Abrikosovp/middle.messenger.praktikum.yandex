@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {template} from "./template";
 import ChatSide from "../../components/sideChat";
 import SideMessages from "../../components/sideMessages";

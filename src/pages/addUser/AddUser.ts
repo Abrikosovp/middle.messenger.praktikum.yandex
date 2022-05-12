@@ -1,4 +1,4 @@
-import Block from "../../modules/block/Block";
+import Block from "../../modules/block";
 import {TRenderElement} from "../../utils/types/types";
 import {connect} from "../../modules/connect/connect";
 import Form from "../../components/form";

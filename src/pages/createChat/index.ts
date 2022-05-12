@@ -1,2 +1,1 @@
-import {CreateChat} from "./CreateChat";
-export default CreateChat;
+export {CreateChat as default} from "./CreateChat";
