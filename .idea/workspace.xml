@@ -5,13 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1b41e3c-7d69-4c58-9b2b-00bd79f0e1c6" name="Changes" comment="conflict">
+      <change afterPath="$PROJECT_DIR$/src/modules/block/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/avatar/avatar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/avatar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/form.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/link/link.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/link/link.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatItem/ChatItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatItem/ChatItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatList/ChatList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatList/ChatList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatSide.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatSide.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/SideMessages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/SideMessages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/content/MessageContent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/content/MessageContent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/footer/MessageFooterForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/footer/MessageFooterForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/header/MessageHeader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/header/MessageHeader.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Router/Route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Router/Route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/block/Block.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/block/Block.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/addUser/AddUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addUser/AddUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/addUser/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addUser/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/Auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/Auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/Chat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/createChat/CreateChat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createChat/CreateChat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/createChat/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createChat/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/error/Error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/error/Error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/error/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/error/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/Main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/changePassword/ChangePassword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/changePassword/ChangePassword.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/changeProfile/ChangeProfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/changeProfile/ChangeProfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/navigation/Navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/navigation/Navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/Registration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/Registration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/renderPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/renderPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

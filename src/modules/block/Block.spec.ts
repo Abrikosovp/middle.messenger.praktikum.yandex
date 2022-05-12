@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 import { JSDOM } from "jsdom";
-import Block from "./Block";
+import Block from "../block";
 import renderPage from "../../utils/renderPage";
 import {TRenderElement} from "./type";
 import {template} from "./template";

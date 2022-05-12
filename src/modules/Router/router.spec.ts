@@ -1,6 +1,6 @@
 import {assert} from 'chai';
 
-import Block from "../block/Block";
+import Block from "../block";
 import {RouterLinks} from "../../utils/const/const";
 import {Router} from "./Router";
 
