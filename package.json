@@ -37,6 +37,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@babel/register": "^7.17.7",
     "@babel/runtime": "^7.17.9",
+    "@parcel/resolver-default": "^2.5.0",
     "@parcel/transformer-pug": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
     "@types/chai": "^4.3.1",
