@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b41e3c-7d69-4c58-9b2b-00bd79f0e1c6" name="Changes" comment="conflict">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avatar/avatar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/avatar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/template.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/template.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/link/link.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/link/link.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatItem/ChatItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatItem/ChatItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/services/UserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/services/UserService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/services/authService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/services/authService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/services/chatService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/services/chatService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/store/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/store/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types/types.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d1b41e3c-7d69-4c58-9b2b-00bd79f0e1c6" name="Changes" comment="conflict" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
