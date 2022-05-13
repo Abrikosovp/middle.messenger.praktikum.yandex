@@ -12,7 +12,7 @@
 - «[Фигма](https://www.figma.com/file/YYEdDyBhdyXBsbkY9AANz5/yandex-messanger?node-id=0%3A1)»,
 
 #Стабильная версия
-- «[На сайта Netlify](https://tourmaline-sundae-a9df9c.netlify.app)»
+- «[На сайта Netlify](https://delicate-gaufre-fa4246.netlify.app)»
 
 #Pull request
 - «[Sprint 3](https://github.com/Abrikosovp/middle.messenger.praktikum.yandex/pull/4 )»
