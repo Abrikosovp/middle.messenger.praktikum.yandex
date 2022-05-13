@@ -1,0 +1,15 @@
+extends layout/main
+
+block variables
+    - const title = 'Messanger'
+
+append head-content
+    link(href="./index.scss" rel="stylesheet")
+    link(href="./styles/normalize.scss" rel="stylesheet")
+
+block main-content
+     div(id="app")
+
+
+prepend script
+    script(src="index.ts" type="module")
