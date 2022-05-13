@@ -5,7 +5,7 @@ import {TRenderElement} from "../../../utils/types/types";
 
 type TEMessageProps = {
     errorText?: string;
-    isValid: boolean
+    isValid: boolean;
 };
 
 

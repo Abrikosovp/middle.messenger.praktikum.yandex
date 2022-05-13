@@ -5,21 +5,21 @@ import {Button} from "../button/button";
 
 
 type FormProps = {
-    title?: string,
-    urlMessage?: string,
-    content?: TComponent
-    btn?: Block
-    btnText?: string,
-    avatar?: Block
-    isBtn?: boolean
-    typeForm?: string
+    title?: string;
+    urlMessage?: string;
+    content?: TComponent;
+    btn?: Block;
+    btnText?: string;
+    avatar?: Block;
+    isBtn?: boolean;
+    typeForm?: string;
     handlerSubmit?: (param: Record<string, string>) => void;
 };
 
 type TBtn = {
-    type: string,
-    text: string,
-    tagClass?: string,
+    type: string;
+    text: string;
+    tagClass?: string;
 }
 
 function serializeForm(formNode: HTMLFormElement): any {
@@ -41,7 +41,7 @@ export class Form extends Block {
 
         let propsBtn: TBtn = {
             type: "submit",
-            text: props?.btnText ? props.btnText : 'Создать',
+            text: props?.btnText ?? 'Создать',
         }
 
         if (isChat) {

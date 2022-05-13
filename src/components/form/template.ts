@@ -52,4 +52,7 @@ else
   .container-form__footer
       #{navigation}
       #{link}
+      
+if errorTextForm
+    .error-text-form #{errorTextForm}
 `;

@@ -8,6 +8,7 @@ const getUser = (): TStore['user'] => {
 
 const setUser = (payload: TStore['user']): void => {
   Store.set('user', payload);
+  setErrorTextForm('');
 };
 
 const setChats = (payload: TStore['chats']): void => {
@@ -33,6 +34,10 @@ const setNewMessage = (payload: MessageResponse): void => {
   }
 };
 
+const setErrorTextForm = (payload: TStore['errorTextForm']): void => {
+  Store.set('errorTextForm', payload);
+};
+
 const setActiveChat = (payload: TStore['activeChat']): void => {
   Store.set('activeChat', payload);
 };
@@ -47,4 +52,5 @@ export {
   setMessageList,
   setNewMessage,
   setUsersToChat,
+  setErrorTextForm
 };

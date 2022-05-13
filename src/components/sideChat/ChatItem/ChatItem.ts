@@ -3,13 +3,13 @@ import {TRenderElement} from "../../../utils/types/types";
 import {template} from "./template";
 
 type ChatsItemProps = {
-    chatId: number,
-    title: string,
-    time: string,
-    name: string,
-    last_message: string,
-    unread_count: string,
-    avatar: string,
+    chatId: number;
+    title: string;
+    time: string;
+    name: string;
+    last_message: string;
+    unread_count: string;
+    avatar: string;
 
 }
 

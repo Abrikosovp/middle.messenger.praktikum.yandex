@@ -6,7 +6,7 @@
     "node": ">=16.13.1"
   },
   "scripts": {
-    "start": "npm i && parcel src/index.pug --open --port 3000",
+    "start": "parcel src/index.pug --open --port 3000",
     "serve": "parcel build --no-minify src/index.pug && node server.js",
     "build": "rm -rf dist && parcel build src/index.pug --no-cache",
     "eslint": "eslint . --ext .ts",

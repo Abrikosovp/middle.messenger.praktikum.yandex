@@ -47,7 +47,7 @@ export class Textfield extends Block {
         e.preventDefault()
         const {name, value, files} = (e.target as HTMLInputElement);
         if (files) {
-            // this.updateForm(files[0], false, "");
+
         } else {
             this.onFocusValid(value, name);
         }

@@ -4,7 +4,7 @@ import {template} from "./template";
 import UserService from "../../modules/services/UserService";
 
 type AvatarType = {
-    url: string,
+    url: string;
 }
 
 export type AvatarProps = {

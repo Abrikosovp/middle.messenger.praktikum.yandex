@@ -1,4 +1,4 @@
-import {setUser} from "../store/actions";
+import {setErrorTextForm, setUser} from "../store/actions";
 import Router from "../Router";
 import {RouterLinks} from "../../utils/const/const";
 import {ChangePasswordRequest, ChangeUserRequest} from "../api/types";
@@ -19,7 +19,7 @@ class UserService {
             await ChangePasswordApi.request(payload);
             Router.go(RouterLinks.PROFILE);
         } catch (e) {
-
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -28,6 +28,7 @@ class UserService {
             const response = await ChangeUserAvatarApi.request(payload);
             setUser(response);
         } catch (e) {
+            setErrorTextForm(e.reason);
         }
     }
 

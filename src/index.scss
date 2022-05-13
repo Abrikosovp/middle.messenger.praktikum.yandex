@@ -18,6 +18,10 @@ body {
   color: #075373;
 }
 
+.error-text-form {
+  color: $errorColor;
+}
+
 img {
   object-fit: cover;
   max-width: 100%;

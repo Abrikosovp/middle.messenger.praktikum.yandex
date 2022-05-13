@@ -1,5 +1,5 @@
 import AuthApi from "../api/AuthApi"
-import {setUser} from "../store/actions";
+import {setErrorTextForm, setUser} from "../store/actions";
 import Router from "../Router";
 import LogoutApi from "../api/LogoutApi";
 import {RouterLinks} from "../../utils/const/const";
@@ -23,6 +23,7 @@ class AuthService {
             await LoginApi.request(payload);
             await this.getUser();
         } catch (e) {
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -33,7 +34,7 @@ class AuthService {
             Router.enterAuth(false).start();
             Router.go(RouterLinks.LOGIN);
         } catch (e) {
-            console.log(e);
+            setErrorTextForm(e.reason);
         }
     }
 }

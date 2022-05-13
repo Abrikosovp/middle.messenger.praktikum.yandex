@@ -3,7 +3,7 @@ import {
     getActiveChat,
     getUser,
     setActiveChat,
-    setChats,
+    setChats, setErrorTextForm,
     setMessageList,
     setNewMessage,
     setUsersToChat
@@ -24,7 +24,7 @@ class ChatService {
             const response = await ChatsApi.request();
             setChats(response);
         } catch (e) {
-            console.error(e);
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -84,7 +84,7 @@ class ChatService {
                 this.initSocket(user.id, payload, token);
             }
         } catch (e) {
-            console.error(e);
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -93,7 +93,7 @@ class ChatService {
             const chatInfo = await ChatDataApi.request(payload);
             setUsersToChat(chatInfo);
         } catch (e) {
-            console.log(e);
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -103,7 +103,7 @@ class ChatService {
             Router.go(RouterLinks.CHATS);
             await this.getChatUsers(payload.chatId);
         } catch (e) {
-
+            setErrorTextForm(e.reason);
         }
     }
 
@@ -113,6 +113,7 @@ class ChatService {
             await this.getChats();
             Router.go(RouterLinks.CHATS);
         } catch (e) {
+            setErrorTextForm(e.reason);
         }
     }
 }
