@@ -1,4 +1,4 @@
-import {template} from "./template";
+const template = require('./template.pug');
 import Block from "../../../modules/block";
 import {TRenderElement} from "../../../utils/types/types";
 import Form from "../../form";
@@ -15,7 +15,7 @@ export class MessageFooterForm extends Block {
             formTemplate: new Form({
                 typeForm: "chat",
                 btnText: "отпр",
-                handlerSubmit: (values) => {
+                handlerSubmit: (values: any) => {
                     ChatService.sendMessageSocket(values[InputName.message] as string);
                     const component = this.getContent();
                     const formElement = component.querySelector(`#${InputName.message}`) as HTMLFormElement;

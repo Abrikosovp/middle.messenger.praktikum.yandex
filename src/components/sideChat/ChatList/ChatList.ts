@@ -1,7 +1,6 @@
 import Block from "../../../modules/block";
 import {TRenderElement} from "../../../utils/types/types";
-import {template} from "./template";
-import {ChatsListProps} from "./types";
+const template = require('./template.pug');
 import Router from "../../../modules/Router";
 import {RouterLinks} from "../../../utils/const/const";
 import {getUrlParam} from "../../../utils/urlParam/getUrlParam";
@@ -10,7 +9,7 @@ import {getUrlParam} from "../../../utils/urlParam/getUrlParam";
 
 export class ChatList extends Block {
 
-    constructor(props: ChatsListProps) {
+    constructor(props: any) {
         super("div", ["chat-list"], {
             ...props,
             events: {
@@ -33,13 +32,8 @@ export class ChatList extends Block {
 
 
     protected render(): TRenderElement {
-        const chatsData = this.props.chats.map((ChatItem: any) => {
-            return ChatItem.props;
-        });
-
         return this.compile(template, {
             ...this.props,
-            chats: chatsData,
         });
     }
 

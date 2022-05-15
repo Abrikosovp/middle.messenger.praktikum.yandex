@@ -1,4 +1,4 @@
-import {template} from "./template";
+const template = require('./template.pug');
 import Block from "../../../modules/block";
 import {TRenderElement} from "../../../utils/types/types";
 import {RouterLinks, UrlImg} from "../../../utils/const/const";

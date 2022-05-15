@@ -1,7 +1,6 @@
 import {getTime} from "../../../utils/getTime/gtrTime";
 import {connect} from "../../../modules/connect/connect";
 import {ChatList} from "./ChatList";
-import ChatItem from "../ChatItem";
 
 export default connect(ChatList, ({chats}) => ({
     id: "chatsID",
@@ -23,7 +22,7 @@ export default connect(ChatList, ({chats}) => ({
                     avatar = "";
                 }
 
-                return new ChatItem({
+                return {
                         chatId: id,
                         title,
                         name: last_message?.user?.first_name ? last_message.user.first_name : "",
@@ -31,7 +30,6 @@ export default connect(ChatList, ({chats}) => ({
                         time: last_message?.time ? getTime(last_message.time) : '',
                         last_message: last_message?.content ? last_message.content.length > 20 ? last_message?.content.slice(0, 20) + "..." : last_message?.content : '',
                         unread_count: unread_count ? `${unread_count}` : '',
-                    },
-                )
+                    }
             }),
 }));

@@ -1,1 +1,3 @@
-export {AddUser as default} from "./AddUser";
+import AddUser from "./addUser";
+
+export default AddUser

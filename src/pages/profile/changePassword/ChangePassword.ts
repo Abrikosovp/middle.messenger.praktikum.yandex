@@ -1,6 +1,6 @@
 import Block from "../../../modules/block";
 import {TRenderElement, TUserResponse} from "../../../utils/types/types";
-import {template} from "./template";
+const template = require('./template.pug');
 import Textfield from "../../../components/input";
 import Form from "../../../components/form";
 import {InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../../utils/const/const";
@@ -22,7 +22,7 @@ export class ChangePassword extends Block {
                 urlMessage: "Уже зарегистрированы ?",
                 typeForm: "changePassword",
                 btnText: "Сохранить",
-                handlerSubmit: (values) => {
+                handlerSubmit: (values: any) => {
                     UserService.updatePassword({oldPassword: values.password, newPassword: values.newPassword})
 
                 },

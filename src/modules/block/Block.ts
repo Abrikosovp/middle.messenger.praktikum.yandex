@@ -1,4 +1,4 @@
-import {render} from "pug";
+// import {render} from "pug";
 import {TRenderElement} from "../../utils/types/types";
 import {EventBus} from "../eventBus/EventBus";
 import {nanoid} from 'nanoid';
@@ -139,8 +139,11 @@ export class Block<P = any> {
             }
         });
 
-        //рендарим шаблон
-        fragment.innerHTML = render(template, {doctype: 'html', ...props}); //передали сюда
+        if (typeof template === "function") {
+            //рендарим шаблон
+            // @ts-ignore
+            fragment.innerHTML = template(props);
+        }
 
 
         Object.entries(components).forEach(([id, component]) => {
