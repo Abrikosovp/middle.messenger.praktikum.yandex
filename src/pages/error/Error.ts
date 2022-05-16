@@ -1,6 +1,6 @@
 import Block from "../../modules/block";
 import {TRenderElement} from "../../utils/types/types";
-import {template} from "./template";
+const template = require('./template.pug');
 
 export class Error extends Block {
 

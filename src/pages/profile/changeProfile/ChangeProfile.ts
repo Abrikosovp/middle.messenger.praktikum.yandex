@@ -1,6 +1,6 @@
 import Block from "../../../modules/block";
 import {TRenderElement, TUserResponse} from "../../../utils/types/types";
-import {template} from "./template";
+const template = require('./template.pug');
 import Textfield from "../../../components/input";
 import Form from "../../../components/form";
 import {InputLabel, InputName, InputPlaceholder, RouterLinks, RouterLinksName} from "../../../utils/const/const";

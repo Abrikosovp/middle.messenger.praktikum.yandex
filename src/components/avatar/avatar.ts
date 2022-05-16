@@ -1,7 +1,8 @@
 import Block from "../../modules/block";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
-import {template} from "./template";
 import UserService from "../../modules/services/UserService";
+
+const template = require('./template.pug');
 
 type AvatarType = {
     url: string;
@@ -31,6 +32,7 @@ export class Avatar extends Block<AvatarProps> {
     }
 
     protected render(): TRenderElement {
+        console.log(this.props)
         return this.compile(template, {...this.props,});
     }
 }

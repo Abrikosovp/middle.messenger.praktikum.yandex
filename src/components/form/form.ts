@@ -1,7 +1,8 @@
 import Block from "../../modules/block";
 import {TComponent, TRenderElement} from "../../utils/types/types";
-import {template} from "./template";
 import {Button} from "../button/button";
+
+const template = require('./template.pug');
 
 
 type FormProps = {

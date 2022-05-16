@@ -1,6 +1,7 @@
-import {template} from "./template";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import Block from "../../modules/block";
+
+const template = require('./template.pug');
 
 type BtnType = { text: string, tagClass?: string, type?: string, events?: ComponentEvents }
 
@@ -18,7 +19,7 @@ export class Button extends Block {
     isDisabled(btnDisabled: string) {
         this.setProps({
             ...this.props,
-            btnDisabled,
+            btnDisabled: btnDisabled ? "custom-bn" : "custom-bn btn-hover",
         });
     }
 

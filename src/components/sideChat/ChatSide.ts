@@ -1,6 +1,6 @@
 import Block from "../../modules/block";
 import {TRenderElement} from "../../utils/types/types";
-import {template} from "./template";
+const template = require('./template.pug');
 import {RouterLinks, UrlImg} from "../../utils/const/const";
 import Link from "../link";
 import ChatList from "./ChatList";

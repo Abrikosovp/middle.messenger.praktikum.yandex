@@ -1,9 +1,10 @@
 import Block from "../../../modules/block";
 import {TRenderElement} from "../../../utils/types/types";
-import {template} from "./template";
 import {InputName, RouterLinks, RouterLinksName} from "../../../utils/const/const";
 import Link from "../../../components/link";
 import AuthService from "../../../modules/services/authService"
+
+const template = require('./template.pug');
 
 export class Navigation extends Block {
 

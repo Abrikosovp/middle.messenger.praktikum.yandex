@@ -1,7 +1,8 @@
-import {template} from "./template";
 import {ComponentEvents, TRenderElement} from "../../utils/types/types";
 import Block from "../../modules/block";
 import Router from "../../modules/Router";
+
+const template = require('./template.pug');
 
 type BtnType = { path: string; id?: string; label?: string; className?: string; events?: ComponentEvents; }
 

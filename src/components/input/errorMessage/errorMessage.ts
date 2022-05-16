@@ -1,7 +1,7 @@
-
-import {template} from "./template";
 import Block from "../../../modules/block";
 import {TRenderElement} from "../../../utils/types/types";
+
+const template = require('./template.pug');
 
 type TEMessageProps = {
     errorText?: string;
