@@ -42,7 +42,7 @@ module.exports = {
                 include: path.join(__dirname, 'src'),
                 use: [
                     {
-                        loader: 'pug-loader',
+                        loader: 'pug3-loader',
                     },
                 ],
             },

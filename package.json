@@ -61,7 +61,7 @@
     "mocha": "10.0.0",
     "npm-run-all": "^4.1.5",
     "process": "0.11.10",
-    "pug-loader": "2.4.0",
+    "pug3-loader": "^2.4.3",
     "sass": "1.42.1",
     "sass-loader": "12.6.0",
     "stylelint": "14.5.3",
@@ -76,6 +76,6 @@
   },
   "dependencies": {
     "nanoid": "3.3.1",
-    "pug": "^2.0.0"
+    "pug": "^3.0.2"
   }
 }
