@@ -1,0 +1,5 @@
+deploy:
+    docker build -t chat .
+    heroku container:push web -a abrikosovpi-chat
+    heroku container:release web -a abrikosovpi-chat
+   	heroku open	-a abrikosovpi-chat
