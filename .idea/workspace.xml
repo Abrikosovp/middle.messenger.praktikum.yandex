@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1b41e3c-7d69-4c58-9b2b-00bd79f0e1c6" name="Changes" comment="conflict">
-      <change afterPath="$PROJECT_DIR$/typings/pug.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +19,8 @@
         <option value="HTML File" />
         <option value="SCSS File" />
         <option value="Pug File" />
-        <option value="TypeScript File" />
         <option value="package.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -90,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651007167686</updated>
       <workItem from="1651007169794" duration="1077000" />
-      <workItem from="1652721225162" duration="7726000" />
+      <workItem from="1652721225162" duration="10054000" />
     </task>
     <servers />
   </component>
