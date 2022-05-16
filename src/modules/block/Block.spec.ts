@@ -1,9 +1,10 @@
 // import {expect} from 'chai';
 import { JSDOM } from "jsdom";
+// import Block from "../block";
 // import renderPage from "../../utils/renderPage";
-// import Test from "../../pages/test";
-//
-//
+// import {TRenderElement} from "./type";
+// const template = require('./template.pug');
+
 // interface TestBlockProps {
 //     value: string;
 //     id: string
@@ -25,6 +26,16 @@ describe("Block component", () => {
     });
 
     // const createBlock = (options: TestBlockProps = defaultProps) => {
+    //     class Test extends Block {
+    //
+    //         constructor(props: any) {
+    //             super("div", ["main-content"], props);
+    //         }
+    //         //
+    //         protected render(): TRenderElement {
+    //             return this.compile(template, {...this.props});
+    //         }
+    //     }
     //
     //     const testBlockObj = new Test(options);
     //
@@ -34,15 +45,15 @@ describe("Block component", () => {
     // };
 
     describe("change props", () => {
-        it("render function should render current props", () => {
-            // const testBlock = createBlock();
-            // expect(document.getElementsByClassName("test")[0].innerHTML)
-            //     .to.contains("default-value");
-            //
-            // testBlock.setProps({ value: "new-value" });
-            //
-            // expect(document.getElementsByClassName("test")[0].innerHTML)
-            //     .to.contains("new-value");
-        });
+        // it("render function should render current props", () => {
+        //     const testBlock = createBlock();
+        //     expect(document.getElementsByClassName("test")[0].innerHTML)
+        //         .to.contains("default-value");
+        //
+        //     testBlock.setProps({ value: "new-value" });
+        //
+        //     expect(document.getElementsByClassName("test")[0].innerHTML)
+        //         .to.contains("new-value");
+        // });
     });
 });

@@ -13,11 +13,6 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.js', '.json'],
-        fallback: {
-            // Here paste
-            path: require.resolve("path-browserify"),
-            "https": false
-        }
     },
     devServer: {
         static: {
@@ -44,6 +39,7 @@ module.exports = {
             },
             {
                 test: /\.pug/,
+                include: path.join(__dirname, 'src'),
                 use: [
                     {
                         loader: 'pug-loader',
@@ -77,6 +73,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             filename: 'index.html',
+            inject   : true,
             minify: {
                 collapseWhitespace: true,
                 removeComments: true,

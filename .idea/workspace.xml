@@ -5,106 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1b41e3c-7d69-4c58-9b2b-00bd79f0e1c6" name="Changes" comment="conflict">
-      <change afterPath="$PROJECT_DIR$/src/components/avatar/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/link/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideChat/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMessages/footer/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMessages/header/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMessages/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/addUser/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/chat/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/createChat/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/error/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/changePassword/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/changeProfile/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/navigation/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/test/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/test/template.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/test/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/block/template.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avatar/avatar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/avatar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avatar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avatar/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/formPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/formPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/errorMessage/errorMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/errorMessage/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/template.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/errorMessage/template.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/textfield.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/textfield.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/link/link.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/link/link.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/link/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatItem/ChatItem.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatItem/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatItem/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatList/ChatList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatList/ChatList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatList/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatList/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatList/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatList/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/ChatSide.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatSide.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideChat/template.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideChat/ChatList/template.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/SideMessages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/SideMessages.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/content/MessageContent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/content/MessageContent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/content/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/footer/MessageFooterForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/footer/MessageFooterForm.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/footer/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/header/MessageHeader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/header/MessageHeader.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/header/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMessages/template.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMessages/content/template.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/block/Block.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/block/Block.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/block/Block.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/block/Block.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/block/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/addUser/AddUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addUser/addUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/addUser/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addUser/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/addUser/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/Auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createChat/CreateChat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createChat/createChat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createChat/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createChat/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createChat/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/error/Error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/error/Error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/error/error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/error/error.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/error/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/profile.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/changePassword/ChangePassword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/changePassword/ChangePassword.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/changePassword/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/changeProfile/ChangeProfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/changeProfile/ChangeProfile.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/changeProfile/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/navigation/Navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/navigation/Navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/navigation/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/Registration.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/Registration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/template.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/dddd.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/dddd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/imag.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/imag.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/test.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/test.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/set/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/set/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +28,7 @@
         <option value="SCSS File" />
         <option value="Pug File" />
         <option value="TypeScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -143,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -154,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/test" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/modules/block" />
+      <recent name="$PROJECT_DIR$/src/pages/test" />
       <recent name="$PROJECT_DIR$/src/pages/error" />
       <recent name="$PROJECT_DIR$/src/pages/main" />
-      <recent name="$PROJECT_DIR$/src/pages/addUser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/auth" />
